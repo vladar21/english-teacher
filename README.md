@@ -6,7 +6,7 @@
 
 * The site’s users are interested in learning and to keep improving their own English skills.
 
-## ite owner's goal:
+## Site owner's goal:
 
 * The goal of the site is to help the site's users and a teacher find each other.
 

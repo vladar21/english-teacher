@@ -18,7 +18,7 @@ The website is designed for individuals looking to enhance their English languag
 The English Teacher website will include the following key features:
 
 1. **Home Page:**
-   - Brief introduction to the teacher and their unique teaching approach.
+   - Brief introduction to the course's and their unique teaching approach.
    - Emphasis on the benefits of achieving English proficiency.
 
 2. **About Course:**

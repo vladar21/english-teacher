@@ -101,10 +101,16 @@ main {
 
 /* Hero section */
 #hero {
-    height: 650px;
-    width: 100%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    margin:0;
+    height:100vh;
+    align-items:center;
+    align-content:center;
+    padding:0 8rem;
     background: url('../images/Dark-London.jpg') no-repeat center center/cover;
-    position: relative;
+    /* position: relative; */
 }
 
 #cover-text {
@@ -122,6 +128,33 @@ main {
 #cover-text>h2,
 #cover-text>h3 {
     color: #ffffff;
+}
+
+/* Speach bubble */
+.bubble {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #252020;
+}
+
+.bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid rgba(255, 255, 255, 0.8);
+    border-right: 12px solid transparent;
+    border-top: 12px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 20px solid transparent;
+    left: 32px;
+    bottom: -24px;
 }
 
 /* Reasons section */
@@ -151,18 +184,22 @@ main {
 }
 
 #benefits > div {
-    display:flex;
-    background-color:#fff;
+    /* display:flex; */
+    background-color:rgba(123, 81, 141, 0.8);
     padding:20px;
-    border-radius:30px;
-    min-width:40px;
+    border-radius:15px;
+    min-width:100px;
     max-width:220px;
-    min-height:40px;
-    margin:20px;
-    position:relative;
-    align-items:center;
+    min-height:46px;
+    margin:30px 15px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+   
+    /* align-items:center;
     justify-content:center;
-    text-align:center;
+    text-align:center; */
   }
 
 /* #benefits-physical>div,
@@ -181,7 +218,7 @@ hr {
 }
 
 /* Reasons image style */
-#circle-cover-bg {
+/* #circle-cover-bg {
     background: url("../images/reasons-image.webp") no-repeat center center/cover;
     height: 90vw;
     width: 90vw;
@@ -189,13 +226,13 @@ hr {
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
-}
+} */
 
-#benefits-image {
+/* #benefits-image {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 /* Meetup Times section */
 #times {
@@ -292,46 +329,7 @@ hr {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
-}
-
-/* Speach bubble */
-#hero {
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:center;
-    margin:0;
-    height:100vh;
-    align-items:center;
-    align-content:center;
-    padding:0 8rem;
-  }
-  
-  .bubble {
-    position: relative;
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 40px;
-    padding: 24px;
-    text-align: center;
-    color: #252020;
-  }
-  
-  .bubble-bottom-left:before {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 24px solid rgba(255, 255, 255, 0.8);
-    border-right: 12px solid transparent;
-    border-top: 12px solid rgba(255, 255, 255, 0.8);
-    border-bottom: 20px solid transparent;
-    left: 32px;
-    bottom: -24px;
-  }
-  
+}  
 
 /* Media query: large or landscape phone (576px and up) */
 @media screen and (min-width: 576px) {
@@ -384,7 +382,7 @@ hr {
     }
 
     /* Reason section */
-    #benefits-physical,
+    /* #benefits-physical,
     #benefits-mental {
         display: flex;
         flex-direction: column;
@@ -399,7 +397,7 @@ hr {
     #benefits-mental > div {
         text-align: end;
         align-self: flex-end;
-    }
+    } */
 
     /* Gallery */
     #photos {
@@ -443,28 +441,28 @@ hr {
 
 @media screen and (min-width: 1200px) {
     /* Reason section */
-    #benefits {
+    /* #benefits {
         display: flex;
         flex-direction: row;
-    }
+    } */
 
-    #benefits > div {
+    /* #benefits > div {
         flex: 1;
-    }
+    } */
 
-    #benefits-image {
+    /* #benefits-image {
         order: 0;
-    }
+    } */
 
-    #benefits-mental {
+    /* #benefits-mental {
         order: 1;
-    }
+    } */
 
-    #benefits-mental > div {
+    /* #benefits-mental > div {
         align-self: flex-start;
-    }
+    } */
 
-    #benefits-physical > div {
+    /* #benefits-physical > div {
         align-self: flex-end;
-    }
+    } */
 }

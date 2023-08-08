@@ -160,12 +160,11 @@ main {
 /* Reasons section */
 #reasons {
     width: 100%;
-    /* margin: 20px auto; */
-    /* background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.jpg') no-repeat center center/cover; */
     background-color: #414141;
 }
 
-#reasons h2 {
+#reasons h2, 
+#meetups h2 {
     margin-bottom: 20px;
     text-align: center;
     font-size: 280%;
@@ -235,6 +234,11 @@ hr {
 } */
 
 /* Meetup Times section */
+#meetups {
+    width: 100%;
+    background-color: #414141;
+}
+
 #times {
     background: url('../images/dublin-city.webp') no-repeat center/cover;
     /* Handles responsivity without the need for a media query */
@@ -258,6 +262,26 @@ hr {
 #times h3 {
     /* Override the heading colour set in general style*/
     color: #fafafa;
+}
+
+#times div img {
+    max-height:50px;
+    border: 2px solid white;
+}
+
+#times div svg {
+    /* display: block;
+    margin:0 auto; */
+    max-height:50px;
+    border: 2px solid white;
+}
+
+#oxford img, #person img {
+    background-color: white;
+}
+
+#macmilian {
+    background-color: white;
 }
 
 /* Gallery page */
@@ -317,20 +341,21 @@ hr {
 }
 
 /* Footer */
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
+footer {
+    background-color:rgba(39, 34, 34, 1);
+    padding: 0.5rem;
     display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
-}  
-
+footer a {
+    margin-top: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
 /* Media query: large or landscape phone (576px and up) */
 @media screen and (min-width: 576px) {
     #photos {

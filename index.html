@@ -1,56 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Teacher Website</title>
+    <!-- Meta tags for search engines -->
+    <meta name="description"
+        content="English Teacher Site. Welcome to Our English Learning Journey. Fluent English is the key to achieving success and complete self-realization.">
+    <meta name="keywords" content="english, learning english, on-site education, remote education, zaporozhie, ukraine, .zp, .ua">
+    <!-- Title -->
+    <title>Learn English with Eleonora</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+    <!-- Header -->
     <header>
-        <h1>Learn English with John Doe</h1>
+        <a href="index.html">
+            <h1 id="logo">Improve your English</h1>
+        </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Course</a></li>
-                <li><a href="#resources">Learning Resources</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul id="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="section">
-        <div class="container">
-            <h2>Welcome to Our English Learning Journey</h2>
-            <p>Fluent English is the key to achieving success and complete self-realization.</p>
-        </div>
-    </section>
+    <!-- Main content -->
+    <main>
+        <section id="hero">
+            <div id="cover-text">
+                <h2>Welcome to Our English Learning Journey</h2>
+                <h3></h3>
+            </div>
+            <div class="bubble bubble-bottom-left" contenteditable>Fluent English is the key to achieving success and complete self-realization!</div>
+        </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Our Course</h2>
-            <p>Unlock your potential with our comprehensive English language course.</p>
-        </div>
-    </section>
+        <section id="reasons">
+            <h2>Why Would You Like These Courses?</h2>
+            <div id="benefits">               
+                <div>
+                    <h3>Engaging Curriculum: <i class="fa-solid fa-heartbeat"></i></h3>
+                    <hr>
+                    <p>Discover an innovative and dynamic curriculum designed to cater to diverse learning styles.</p>
+                </div>
+                <div>
+                    <h3>Tailored Learning: <i class="fa-solid fa-dumbbell"></i></h3>
+                    <hr>
+                    <p>Experience personalized learning paths that adapt to your individual strengths and areas for improvement.</p>
+                </div>
+                <div>
+                    <h3>Real-World Context: <i class="fa-solid fa-heartbeat"></i></h3>
+                    <hr>
+                    <p>Immerse yourself in practical, real-world scenarios to enhance your language skills and boost your confidence.</p>
+                </div>
+                <div>
+                    <h3>Interactive Sessions: <i class="fa-solid fa-dumbbell"></i></h3>
+                    <hr>
+                    <p>Participate in interactive sessions that encourage active communication, ensuring rapid progress in your language journey.</p>
+                </div>
+                <div>
+                    <h3>Cultural Insights: <i class="fa-solid fa-heartbeat"></i></h3>
+                    <hr>
+                    <p>Gain insights into English-speaking cultures, enhancing your understanding of language nuances and cultural nuances.</p>
+                </div>
+            
+                <div>
+                    <h3>Feedback-Driven Learning: <i class="fa-solid fa-dumbbell"></i></h3>
+                    <hr>
+                    <p>Receive regular constructive feedback to fine-tune your language proficiency and address specific areas of improvement.</p>
+                </div>                   
+                <div>
+                    <h3>Small Group Dynamics: <i class="fa-brands fa-fly"></i></h3>
+                    <hr>
+                    <p>Benefit from small group dynamics that promote active participation, collaborative learning, and peer support.</p>
+                </div>
+                <div>
+                    <h3>Flexible Learning: <i class="fa-solid fa-globe"></i></h3>
+                    <hr>
+                    <p>Enjoy the flexibility of blended learning, combining online modules with engaging in-person sessions for optimal convenience.</p>
+                </div>          
+                <div>
+                    <h3>Flexible Learning: <i class="fa-solid fa-globe"></i></h3>
+                    <hr>
+                    <p>Practical Applications: Learn practical language skills applicable to various professional contexts, enhancing your career prospects.</p>
+                </div>            
+              
 
-    <section id="resources" class="section">
-        <div class="container">
-            <h2>Learning Resources</h2>
-            <p>Explore a variety of materials to enhance your language skills.</p>
-        </div>
-    </section>
+                <div id="benefits-image">
+                    <div id="circle-cover-bg"></div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Reach out to us for inquiries, feedback, and enrollment details.</p>
-        </div>
-    </section>
+        <!-- Meetup times section -->
+        <section id="meetups">
+            <h2 class="hidden-heading">Meet-up Times</h2>
+            <div id="times">
+                <div>
+                    <h3>Urban <i class="fa-solid fa-city"></i></h3>
+                    <p>Monday</p>
+                    <p>5K</p>
+                    <p>The Marker Hotel</p>
+                    <p>18:30</p>
+                </div>
+                <div>
+                    <h3>Trail <i class="fa-solid fa-tree"></i></h3>
+                    <p>Wednesday</p>
+                    <p>10K</p>
+                    <p>The Phoenix Park</p>
+                    <p>18:30</p>
+                </div>
+                <div>
+                    <h3>Urban <i class="fa-solid fa-city"></i></h3>
+                    <p>Friday</p>
+                    <p>5K</p>
+                    <p>The Marker Hotel</p>
+                    <p>18:30</p>
+                </div>
+                <div>
+                    <h3>Trail <i class="fa-solid fa-tree"></i></h3>
+                    <p>Saturday</p>
+                    <p>10K</p>
+                    <p>The Phoenix Park</p>
+                    <p>09:30</p>
+                </div>
+                <div>
+                    <h3>Coffee <i class="fa-solid fa-mug-hot"></i></h3>
+                    <p>Sunday</p>
+                    <p>0K</p>
+                    <p>The Marker Hotel</p>
+                    <p>11:30</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Learn English with John Doe</p>
-        </div>
+        <ul id="social-networks">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
     </footer>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

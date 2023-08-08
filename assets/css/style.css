@@ -164,7 +164,8 @@ main {
 }
 
 #reasons h2, 
-#meetups h2 {
+#meetups h2,
+#contacts h2 {
     margin-bottom: 20px;
     text-align: center;
     font-size: 280%;
@@ -282,6 +283,169 @@ hr {
 
 #macmilian {
     background-color: white;
+}
+
+ /* Contacts section */
+
+#contacts { 
+
+    width: 100%;
+    background-color: #414141 ;
+
+    /* position: relative;
+    z-index: 3;
+    padding-top: 50px;
+    padding-bottom: 50px; */
+}
+
+#contacts-container {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    margin:0;
+    height:100vh;
+    align-items:center;
+    align-content:center;
+    padding:0 8rem;
+    background: url('../images/StockSnap_MA6Q3URJYB.jpg') no-repeat center center/cover;
+}
+
+#contacts .container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#contacts .section-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#contacts .section-header h2 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#contacts .section-header p {
+    color: #FFF;
+}
+
+#contacts .row  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contacts .contact-info {
+    width: 50%;
+}
+
+#contacts .contact-info-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#contacts .contact-info-icon {
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#contacts .contact-info-icon i {
+    font-size: 30px;
+    line-height: 70px;
+}
+
+#contacts .contact-info-content {
+    margin-left: 20px;
+}
+
+#contacts .contact-info-content h4 {
+    color: #1da9c0;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+#contacts .contact-info-content p {
+    color: #FFF;
+    font-size: 1em;
+}
+
+#contacts .contact-form {
+    background-color: #fff;
+    padding: 40px;
+    width: 45%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#contacts .contact-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#contacts .contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#contacts .contact-form .input-box input,
+#contacts .contact-form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+#contacts .contact-form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+#contacts .contact-form .input-box input:focus ~ span,
+#contacts .contact-form .input-box textarea:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+#contacts .contact-form .input-box input[type="submit"]
+{
+    width: 100%;
+    background: #00bcd4;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #00bcd4;
+    transition: 0.5s;
+}
+
+#contacts .contact-form .input-box input[type="submit"]:hover
+{
+    background: #FFF;
+    color: #00bcd4;
 }
 
 /* Gallery page */
@@ -429,6 +593,9 @@ footer a {
     #photos {
         column-count: 3;
     }
+
+   
+        
 
     /* Sign up */
     #signup {

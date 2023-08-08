@@ -398,6 +398,7 @@ footer a {
     main {
         /* Push main content down to accommodate larger header */
         /* margin-top: 79px; */
+        background-color: black;
     }
 
     /* Hero image */

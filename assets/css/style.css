@@ -164,7 +164,7 @@ main {
 }
 
 #reasons h2, 
-#meetups h2,
+#learn h2,
 #contacts h2 {
     margin-bottom: 20px;
     text-align: center;
@@ -234,20 +234,20 @@ hr {
     justify-content: center;
 } */
 
-/* Meetup Times section */
-#meetups {
+/* Learnign resoursers section */
+#learn {
     width: 100%;
     background-color: #414141;
 }
 
-#times {
+#learn-container {
     background: url('../images/dublin-city.webp') no-repeat center/cover;
     /* Handles responsivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
 }
 
-#times div {
+#learn-container div {
     color: #fafafa;
     background-color: rgba(0,0,0, .6);
     padding: 15px;
@@ -260,17 +260,17 @@ hr {
     border: 2px solid white;
 }
 
-#times h3 {
+#learn-container h3 {
     /* Override the heading colour set in general style*/
     color: #fafafa;
 }
 
-#times div img {
+#learn-container div img {
     max-height:50px;
     border: 2px solid white;
 }
 
-#times div svg {
+#learn-container div svg {
     /* display: block;
     margin:0 auto; */
     max-height:50px;

@@ -110,7 +110,6 @@ main {
     align-content:center;
     padding:0 8rem;
     background: url('../images/Dark-London.jpg') no-repeat center center/cover;
-    /* position: relative; */
 }
 
 #cover-text {
@@ -184,7 +183,6 @@ main {
 }
 
 #benefits > div {
-    /* display:flex; */
     background-color:rgba(123, 81, 141, 0.8);
     padding:20px;
     border-radius:15px;
@@ -196,17 +194,8 @@ main {
     margin-bottom: 30px;
     font-weight: bold;
     letter-spacing: 2px;
-   
-    /* align-items:center;
-    justify-content:center;
-    text-align:center; */
-  }
 
-/* #benefits-physical>div,
-#benefits-mental>div {
-    line-height: 20px;
-    margin-bottom: 20px;
-} */
+  }
 
 #benefits p {
     padding: 0 20px;
@@ -216,23 +205,6 @@ hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
-
-/* Reasons image style */
-/* #circle-cover-bg {
-    background: url("../images/reasons-image.webp") no-repeat center center/cover;
-    height: 90vw;
-    width: 90vw;
-    margin-bottom: 20px;    
-    border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
-} */
-
-/* #benefits-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 /* Learnign resoursers section */
 #learn {
@@ -271,8 +243,6 @@ hr {
 }
 
 #learn-container div svg {
-    /* display: block;
-    margin:0 auto; */
     max-height:50px;
     border: 2px solid white;
 }
@@ -317,29 +287,6 @@ hr {
     padding-left: 5px;
     padding-right: 5px;
 }
-
-/* #contacts-container .section-header {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-#contacts-container .section-header h2 {
-    color: #FFF;
-    font-weight: bold;
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-#contacts-container .section-header p {
-    color: #FFF;
-} */
-
-/* #contacts-container .row  {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-} */
 
 #contacts-container .contact-info {
     width: 30%;
@@ -535,53 +482,11 @@ footer a {
         right: 50px;
     }
 
-    /* Reason section */
-    /* #benefits-physical,
-    #benefits-mental {
-        display: flex;
-        flex-direction: column;
-        width: 100%;        
-    }
-
-    #benefits-physical > div,
-    #benefits-mental > div {
-        width: 75%;
-    }
-
-    #benefits-mental > div {
-        text-align: end;
-        align-self: flex-end;
-    } */
-
     /* Gallery */
     #photos {
         column-count: 3;
     }
 
-   
-        
-
-    /* Sign up */
-    #signup {
-        background-position: center;
-        position: relative;
-    }
-
-    #signup-form {
-        max-width: 400px;
-        position: absolute;
-        left: 10%;
-        top: 150px;
-    }
-    
-    .text-input:hover {
-        border-color: #f16c6b;
-    }
-
-    .join-button:hover {
-        background-color: #fafafa;
-        color: #454b1b;
-    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -597,29 +502,5 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
-    /* Reason section */
-    /* #benefits {
-        display: flex;
-        flex-direction: row;
-    } */
 
-    /* #benefits > div {
-        flex: 1;
-    } */
-
-    /* #benefits-image {
-        order: 0;
-    } */
-
-    /* #benefits-mental {
-        order: 1;
-    } */
-
-    /* #benefits-mental > div {
-        align-self: flex-start;
-    } */
-
-    /* #benefits-physical > div {
-        align-self: flex-end;
-    } */
 }

@@ -10,7 +10,8 @@
 
 /* General styles */
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: 100%;
     display: flex;
     flex-direction: column;
     /* Generic project styles */
@@ -97,6 +98,7 @@ main {
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
+   
 }
 
 /* Hero section */
@@ -160,6 +162,7 @@ main {
 #reasons {
     width: 100%;
     background-color: #414141;
+    height: 100vh;
 }
 
 #reasons h2, 
@@ -260,6 +263,7 @@ hr {
 #contacts { 
     width: 100%;
     background-color: #414141;
+    
 }
 
 #contacts-container {
@@ -268,11 +272,12 @@ hr {
     height:100vh;   
     
     padding:0 8rem;
-    background: url('../images/StockSnap_MA6Q3URJYB.jpg') no-repeat center center/cover;
+    background: url('../images/StockSnap_MA6Q3URJYB.jpg') no-repeat center top/cover;
     position: relative;
     z-index: 3;
     padding-top: 50px;
     padding-bottom: 50px;
+ 
 }
 
 #contacts-container .container {
@@ -416,10 +421,21 @@ hr {
 
 
 /* Footer */
+/* Display footer sections only on contact pages */
+#contacts:target footer {
+    display: flex; /* Show footer */
+}
+
 footer {
+    display: none; /* Footer is hidden by default */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
     background-color:rgba(39, 34, 34, 1);
     padding: 0.5rem;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }

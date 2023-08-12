@@ -116,17 +116,17 @@ main {
 
  /* Hero image */
 #cover-text {
-    font-size: 110%;
+    font-size: 70%;
     padding-top: 20px;
 
     background-color: rgba(241, 109, 107, .7);
     position: absolute;
     bottom: 30px;
-    width: 80%;
+    width: 90%;
     min-width: 235px;
-    height: 220px;
-    /* min-height: 200px; */
-    padding-left: 10px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
 }
 
 #cover-text>h2,
@@ -487,13 +487,22 @@ footer a {
          margin-top: 0px;
     }
 
+    
     #cover-text {
+    
+        bottom: inherit;
+        width: 100%;
+        height: 200px;
+        padding-top: 40px;
+        padding-left: 10px;
+        /* text-align: center; */
+
         /* Final rgba value sets the opacity so it is semi-transparent */
         background-color: rgba(241, 109, 107, .7);
         font-size: 130%;
         position: absolute;
-        /* bottom: 30px;
-        width: 80%;
+        bottom: 30px;
+        /* width: 80%;
         min-height: 200px;
         padding-top: 40px;
         padding-left: 10px; */

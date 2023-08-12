@@ -111,18 +111,21 @@ main {
     align-items:center;
     align-content:center;
     padding:0 8rem;
-    background: url('../images/Dark-London_small.webp') no-repeat center center/cover;
+    background: black url('../images/Dark-London_small.webp') no-repeat center bottom/cover;
 }
 
+ /* Hero image */
 #cover-text {
-    /* Final rgba value sets the opacity so it is semi-transparent */
+    font-size: 110%;
+    padding-top: 20px;
+
     background-color: rgba(241, 109, 107, .7);
-    font-size: 130%;
     position: absolute;
     bottom: 30px;
     width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
+    min-width: 235px;
+    height: 220px;
+    /* min-height: 200px; */
     padding-left: 10px;
 }
 
@@ -133,14 +136,17 @@ main {
 
 /* Speach bubble */
 .bubble {
-    position: relative;
+    position: absolute;
+    top: 230;
+    left: 90px;
+    font-size: 15px;
+    width: 170px;
+    padding: 10px;
+
     font-family: sans-serif;
-    font-size: 18px;
     line-height: 24px;
-    width: 300px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 40px;
-    padding: 24px;
     text-align: center;
     color: #252020;
 }
@@ -170,10 +176,10 @@ main {
 #contacts h2 {
     margin-bottom: 20px;
     text-align: center;
-    font-size: 280%;
+    font-size: 170%;
 }
 
-#benefits {
+/* #benefits {
     display:flex;
     flex-flow:row wrap;
     justify-content:center;
@@ -182,7 +188,7 @@ main {
     align-items:center;
     align-content:center;
     padding:0 8rem;
-    background: black url('../images/London-bus-black-and-white-photography-with-color-08_2_small.webp') no-repeat center center/cover;
+    background: black url('../images/London-bus-black-and-white-photography-with-color-08_2_small.webp') no-repeat left bottom/cover;
 }
 
 #benefits > div {
@@ -204,9 +210,36 @@ main {
     padding: 0 20px;
 }
 
-hr {
+#benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+} */
+
+#benefits {
+    background: black url('../images/London-bus-black-and-white-photography-with-color-08_2_small.webp') no-repeat center/cover;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#benefits div {
+    background-color:rgba(123, 81, 141, 0.3);
+    padding:20px;
+    border-radius:15px;
+    min-width:100px;
+    max-width:220px;
+    min-height:46px;
+    margin:30px 15px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* This will not wrap on screens of less than 400px wide.
+    Ezch div will expand to fill the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Create a grid of meetup time div's over the background image */
+    /* border: 2px solid white; */
 }
 
 /* Learnign resoursers section */
@@ -216,7 +249,7 @@ hr {
 }
 
 #learn-container {
-    background: url('../images/Tower-Bridge_small.webp') no-repeat center/cover;
+    background: black url('../images/Tower-Bridge_small.webp') no-repeat center top/cover;
     /* Handles responsivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
@@ -272,7 +305,7 @@ hr {
     height:100vh;   
     
     padding:0 8rem;
-    background: url('../images/StockSnap_MA6Q3URJYB_small.webp') no-repeat center top/cover;
+    background: black url('../images/StockSnap_MA6Q3URJYB_small.webp') no-repeat center top/cover;
     position: relative;
     z-index: 3;
     padding-top: 50px;
@@ -450,6 +483,85 @@ footer a {
 /* Media query: large or landscape phone (576px and up) */
 @media screen and (min-width: 576px) {
 
+    main {
+         margin-top: 0px;
+    }
+
+    #cover-text {
+        /* Final rgba value sets the opacity so it is semi-transparent */
+        background-color: rgba(241, 109, 107, .7);
+        font-size: 130%;
+        position: absolute;
+        /* bottom: 30px;
+        width: 80%;
+        min-height: 200px;
+        padding-top: 40px;
+        padding-left: 10px; */
+        width: 300px;
+        right: 50px;
+    }
+
+    /* Speach bubble */
+    .bubble {
+        position: relative;
+        top: inherit;
+        left: inherit;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        width: 300px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 40px;
+        padding: 24px;
+        text-align: center;
+        color: #252020;
+    }
+
+    /* h2 styles */
+    #reasons h2, 
+    #learn h2,
+    #contacts h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 280%;
+    }
+
+        /* Section reasons */
+    #benefits {
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:center;
+        margin:0;
+        height:100vh;
+        align-items:center;
+        align-content:center;
+        padding:0 8rem;
+        background: black url('../images/London-bus-black-and-white-photography-with-color-08_2_small.webp') no-repeat left bottom/cover;
+    }
+
+    #benefits > div {
+        background-color:rgba(123, 81, 141, 0.8);
+        padding:20px;
+        border-radius:15px;
+        min-width:100px;
+        max-width:220px;
+        min-height:46px;
+        margin:30px 15px;
+        line-height: 20px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    #benefits p {
+        padding: 0 20px;
+    }
+
+    #benefits hr {
+        border-top: 1px solid #3a3a3a;
+        margin: 5px 0;
+    }
+
     /* to delete */
     #photos {
         column-count: 2;
@@ -502,21 +614,20 @@ footer a {
 
     /* background-image for sections */
     #hero {
-        background: url('../images/Dark-London.jpg') no-repeat center center/cover;
-    }
-
-    #contacts-container {
-        background: url('../images/StockSnap_MA6Q3URJYB.jpg') no-repeat center top/cover;
-    }
-
-    #learn-container {
-        background: url('../images/Tower-Bridge.jpg') no-repeat center/cover;
+        background: black url('../images/Dark-London.webp') no-repeat center center/cover;
     }
 
     #benefits {
-        background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.jpg') no-repeat center center/cover;
+        background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat center center/cover;
     }
 
+    #learn-container {
+        background: black url('../images/Tower-Bridge.webp') no-repeat bottom center/cover;
+    }
+    
+    #contacts-container {
+        background: black url('../images/StockSnap_MA6Q3URJYB.webp') no-repeat center top/cover;
+    }
 
     /* Gallery */
     #photos {

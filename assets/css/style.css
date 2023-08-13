@@ -228,8 +228,7 @@ main {
     background-color:rgba(123, 81, 141, 0.7);
     padding:10px;
     border-radius:15px;
-    
- 
+    font-size: 100%; 
     /* min-height:46px; */
     margin:15px 5px;
     line-height: 25px;
@@ -308,7 +307,7 @@ main {
     height:100vh;   
     
     padding:0 8rem;
-    background: black url('../images/StockSnap_MA6Q3URJYB_small.webp') no-repeat center top/auto;
+    background: black url('../images/StockSnap_MA6Q3URJYB.webp') no-repeat center top/cover;
     position: relative;
     z-index: 3;
     padding-top: 50px;

@@ -57,9 +57,18 @@ While the current focus is on HTML and CSS, potential future enhancements may en
 - Enhancing user engagement through interactive quizzes and exercises.
 - Adding a blog section to share valuable language learning insights.
 
+## Testing
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+
 ## Credits
 
 ### Code
+
+-   Idea of site layout and a lot of styles featers by Code Institute education project from this [Love Running](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main)
 
 -   Idea of the Speache bubbles CSS & HTML from this [Free Frontend](https://freefrontend.com/css-speech-bubbles/)
 

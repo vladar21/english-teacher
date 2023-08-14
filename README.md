@@ -22,26 +22,22 @@ The website is designed for individuals looking to enhance their English languag
 The English Teacher website will include the following key features:
 
 1. **Home Page:**
-   - Brief introduction to the course's and their unique teaching approach.
+   - Short motivational brief and "bubble" speech.
+   - Encouragement and motivation for users to embark on their language learning journey.
    - Emphasis on the benefits of achieving English proficiency.
 
-2. **About Course:**
-   - Comprehensive information about the English course offered, including curriculum, duration, and objectives.
+2. **Reasons:**
    - Establish a clear understanding of what potential students can expect from the course.
 
 3. **Learning Resources:**
    - Compilation of text, images, and videos showcasing the practical benefits of English fluency.
-   - Encouragement and motivation for users to embark on their language learning journey.
 
 4. **Contact Information:**
-   - Clear display of contact details, including Viber number.
+   - Clear display of contact details.
    - Location information accompanied by a visual map.
+   - User-friendly feedback form for sharing feedback, inquiries, and questions.
 
-5. **Feedback Form:**
-   - User-friendly form for sharing feedback, inquiries, and questions.
-   - Direct channel for communication between potential students and the teacher.
-
-6. **Social Media Links:**
+5. **Social Media Links:**
    - Icons to share the course information on social media.
 
 ## Technologies Used

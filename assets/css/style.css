@@ -336,31 +336,35 @@ main {
 
 #contacts-container .container {
     display:flex;
-    flex-direction: row;
-    flex-flow:wrap;
-    justify-content: space-around;
-    gap: 15px;
-    align-items:center;
-    align-content:center;
+    flex-direction: column;
+
+    height: 100vh;
+    /* flex-flow: nowrap; */
+    /* justify-content: center; */
+    gap: 10px;
+    align-items: center;
+
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+   
     padding-left: 5px;
     padding-right: 5px;
 }
 
 #contacts-container .contact-info {
-    width: 400px;
-    min-width: 200px;
-    flex-shrink: 3;
-    padding: 10px;
+    /* flex-basis: 80%; */
+    width: 80%;
+    flex-grow: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color:  rgba(65, 65, 65, 0.7);
 }
 
 #contacts-container .contact-info-item {
     display: flex;
     margin-bottom: 10px;
-    line-height: 0.85;
+    
     font-size: 0.9em;
 }
 
@@ -380,6 +384,7 @@ main {
 
 #contacts-container .contact-info-content {
     margin-left: 20px;
+    line-height: 0.85;
 }
 
 #contacts-container .contact-info-content h4 {
@@ -401,43 +406,45 @@ main {
 .contact-info h3 {
     text-align: center;
     padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 #contacts-container .contact-form {
-    flex-shrink: 1;
-    min-width: 200px;
-    width: 600px;
+    /* flex-basis: 80%; */
+    /* max-width: 600px; */
+    flex-grow: 0;
+    width: 80%;
+   
     background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 3px;
+    padding-top: 0px;
 
-}
-
-#contacts-container .contact-form h3 {
-    font-weight: bold;
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-#contact-form {
     display: flex;
     flex-direction: column;
 }
 
 #contacts-container .contact-form .input-box {
-    /* position: relative; */
+    position: relative;
     width: 100%;
     margin-top: 10px;
+}
+#contact-form > div:nth-child(2) {
+    margin-top: 4px !important;
 }
 
 #contacts-container .contact-form .input-box input,
 #contacts-container .contact-form .input-box textarea{
     width: inherit;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 2px;
     font-size: 12px;
     margin: 0;
+    margin-top: 3px;
     border: none;
     outline: none;
     resize: none;
@@ -460,7 +467,7 @@ main {
 #contacts-container .contact-form .input-box textarea:focus ~ span{
     color: #e91e63;
     font-size: 12px;
-    transform: translateY(-20px);
+    transform: translateY(-14px);
 }
 
 #contacts-container .contact-form .input-box input[type="submit"]
@@ -482,11 +489,12 @@ main {
     color: #00bcd4;
 }
 
-#contact-form h2 {
-    font-size: 1.2em;
+#contacts-container .contact-form h3 {
+    font-size: 1.3em;
     color: black;
     padding: 0px;
     margin: 0px;
+    text-align: center;
 }
 
 
@@ -534,7 +542,6 @@ footer a {
     /* main {
          margin-top: 0px;
     } */
-
     
     #cover-text {
     
@@ -583,7 +590,7 @@ footer a {
         font-size: 280%;
     }
 
-        /* Section reasons */
+    /* Section reasons */
     #benefits {
         display:flex;
         flex-flow:row wrap;
@@ -613,6 +620,37 @@ footer a {
     #benefits hr {
         border-top: 1px solid #3a3a3a;
         margin: 5px 0;
+    }
+
+    /* Contacts sections styles */
+    #contacts-container .container {
+        font-size: 130%;        
+    }
+
+    #contacts-container .contact-info {
+        margin-top: 30px;
+        max-width: 70%;
+    }
+
+    #contacts-container .contact-form {
+        max-width: 70%;
+    }
+
+    #contacts-container .contact-form .input-box input,
+    #contacts-container .contact-form .input-box textarea {
+        padding:20px;
+    }
+
+    .contact-info h3 {
+        padding-bottom: 10px;
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    #contacts-container .contact-form h3  {
+        font-size: 2em;
+        padding: 10px;
+        margin: 10px;
     }
 
     /* to delete */
@@ -661,7 +699,7 @@ footer a {
 
     /* Hero image */
     #cover-text {
-        width: 300px;
+        width: 200px;
         right: 50px;
     }
 
@@ -679,6 +717,26 @@ footer a {
     /* constacts section styles */
     #contacts-container {
         background: black url('../images/StockSnap_MA6Q3URJYB.webp') no-repeat center top/cover;
+    }
+
+    /* Contacts sections styles */
+    #contacts-container .container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    #contacts-container .contact-info {
+        margin-top: 100px;
+        max-width: 400px;
+    }
+    #contacts-container .contact-info-content {
+        line-height: 1.1;
+    }
+
+    #contacts-container .contact-form {
+        max-width: 520px;
     }
 
     /* Gallery */
@@ -720,4 +778,14 @@ footer a {
         /* Create a grid of meetup time div's over the background image */
         /* border: 2px solid white; */        
     }
+
+     /* Contacts sections styles */
+     #contacts-container .container {
+        gap: 300px;
+    }
+
+    #contacts-container .contact-info-content {
+        line-height: 1.2;
+    }
+
 }

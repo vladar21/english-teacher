@@ -244,6 +244,25 @@ main {
     /* border: 2px solid white; */
 }
 
+#benefits > div > div {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: left;
+    justify-content: space-between;
+    align-items: center;
+}
+#benefits > div > div h3 {
+    margin:0;
+    margin-left:10px;
+    width:90%;
+}
+#benefits > div > div i {
+    width: 10%;
+    font-size: 150%;
+}
+
 /* Learnign resoursers section */
 #learn {
     width: 100%;
@@ -547,7 +566,6 @@ footer a {
         align-items:center;
         align-content:center;
         padding:0 8rem;
-        background: black url('../images/London-bus-black-and-white-photography-with-color-08_2_small.webp') no-repeat left bottom/cover;
     }
 
     #benefits > div {
@@ -558,7 +576,6 @@ footer a {
         margin:30px 15px;
         line-height: 20px;
         margin-bottom: 30px;
-        font-weight: bold;
         letter-spacing: 2px;
     }
 
@@ -626,33 +643,6 @@ footer a {
         background: black url('../images/Dark-London.webp') no-repeat center center/cover;
     }
 
-    /* Reasons section styles */
-    #benefits {
-        background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat center center/cover;
-        height:100vh;
-    }
-
-    #benefits div {
-        background-color:rgba(123, 81, 141, 0.8);
-        padding:20px;
-        border-radius:15px;
-        /* min-width:100px; */
-        /* max-width:220px; */
-        min-height:46px;
-        margin:30px 15px;
-        line-height: 20px;
-        margin-bottom: 30px;
-        font-weight: bold;
-        letter-spacing: 2px;
-        /* This will not wrap on screens of less than 400px wide.
-        Ezch div will expand to fill the available space on its row */
-        flex-basis: 220px;
-        flex-grow: 1;
-        flex-shrink: 1;
-        /* Create a grid of meetup time div's over the background image */
-        /* border: 2px solid white; */
-    }
-
     /* learn section styles */
 
     #learn-container {
@@ -684,5 +674,23 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
+    /* Reasons section styles */
+    #benefits {
+        background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat center center/cover;
+        height:100vh;
+    }
 
+    #benefits div {
+        
+        font-size: 95%;
+        
+        letter-spacing: 2px;
+        /* This will not wrap on screens of less than 400px wide.
+        Ezch div will expand to fill the available space on its row */
+        flex-basis: 220px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        /* Create a grid of meetup time div's over the background image */
+        /* border: 2px solid white; */        
+    }
 }

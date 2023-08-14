@@ -360,6 +360,8 @@ main {
 #contacts-container .contact-info-item {
     display: flex;
     margin-bottom: 10px;
+    line-height: 0.85;
+    font-size: 0.9em;
 }
 
 #contacts-container .contact-info-icon {
@@ -396,6 +398,11 @@ main {
     margin-bottom: 0px;
 }
 
+.contact-info h3 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
 #contacts-container .contact-form {
     flex-shrink: 1;
     min-width: 200px;
@@ -404,27 +411,33 @@ main {
     padding: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
+
 }
 
-#contacts-container .contact-form h2 {
+#contacts-container .contact-form h3 {
     font-weight: bold;
     font-size: 2em;
     margin-bottom: 10px;
     color: #333;
 }
 
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
 #contacts-container .contact-form .input-box {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     margin-top: 10px;
 }
 
 #contacts-container .contact-form .input-box input,
 #contacts-container .contact-form .input-box textarea{
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
+    width: inherit;
+    padding-top: 10px;
+    font-size: 12px;
+    margin: 0;
     border: none;
     outline: none;
     resize: none;
@@ -434,9 +447,10 @@ main {
 #contacts-container .contact-form .input-box span {
     position: absolute;
     left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
+    padding-top: 3px;
+    padding-left: 20px;
+    font-size: 1em;
+    margin: 0;
     pointer-events: none;
     transition: 0.5s;
     color: #666;
@@ -456,8 +470,8 @@ main {
     color: rgba(255, 255, 255, 0.7);
     border: none;
     cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
+    padding: 5px;
+    font-size: 1em;
     border: 1px solid #00bcd4;
     transition: 0.5s;
 }
@@ -468,10 +482,13 @@ main {
     color: #00bcd4;
 }
 
-.contact-info h3 {
-    text-align: center;
-    padding-bottom: 5px;
+#contact-form h2 {
+    font-size: 1.2em;
+    color: black;
+    padding: 0px;
+    margin: 0px;
 }
+
 
 /* Google Map */
 

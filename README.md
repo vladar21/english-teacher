@@ -59,7 +59,39 @@ While the current focus is on HTML and CSS, potential future enhancements may en
 
 ## Credits
 
-This project was driven by the aim to facilitate language learning and communication. Special acknowledgments to Eleonora Bikulova for their invaluable input.
+### Code
+
+-   Idea of the Speache bubbles CSS & HTML from this [Free Frontend](https://freefrontend.com/css-speech-bubbles/)
+
+-   Idea of the Contact form from this [CodePen Home
+Responsive Contact Us Page](https://codepen.io/nguyn-tn-thng/pen/jOqEdZW)
+
+-   The map to the Contacts sections from this [Google Map](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85668.37611006557!2d35.09295357087713!3d47.856314708191675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc673dfa85bb03%3A0x7e675cd9074d3f4a!2z0JfQsNC_0L7RgNC-0LbRjNC1LCDQl9Cw0L_QvtGA0L7QttGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNjkwMDA!5e0!3m2!1sru!2sie!4v1691538644437!5m2!1sen!2sie)
+
+### Content
+
+-   All content was written by the developer.
+
+### Media
+
+-   Favicon generator from this [Converter](https://favicon.io/favicon-converter/)
+
+-   Image converter for the images of this site [Image converter](https://www.freeconvert.com/)
+
+-   Image to Readme file from this [Am I Responsive?](https://ui.dev/amiresponsive)
+
+-   Images for home, reasons and learn sections from [this](https://jpn.happyvalentinesday2020.online/), [this](https://getwallpapers.com/) and [this](https://pixabay.com/).
+
+-   Image to contacts section from this [Mark Asthoff](https://stocksnap.io/author/6247)
+
+### Acknowledgements
+-   Special acknowledgments to my sister Eleonora Bikulova for her invaluable input.
+
+-   Special achnowledgment to My colleugue David Calikes for his incredable site [Cumasc Gael](https://davidcalikes.github.io/portfolio-project-one/), that gave me a lot of design ideas
+
+-   My Mentor for continuous helpful feedback.
+
+-   Tutor support at Code Institute for their support.
 
 ## License
 

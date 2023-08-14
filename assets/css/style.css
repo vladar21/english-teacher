@@ -10,10 +10,6 @@
 
 /* General styles */
 body {
-    /* min-height: 100vh; */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     /* Generic project styles */
     color: whitesmoke;
     font-family: 'Lato', sans-serif;
@@ -317,20 +313,21 @@ main {
 #contacts { 
     width: 100%;
     background-color: #414141;
+    height: 100vh;
     
 }
 
 #contacts-container {
     
     margin:0;
-    height:100vh;
+    height:100%;
     
     padding:0;
     background: black url('../images/StockSnap_MA6Q3URJYB.webp') no-repeat center top/cover;
     /* position: relative; */
     /* z-index: 3; */
-    padding-top: 15px;
-    padding-bottom: 15px;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
  
 }
 
@@ -338,7 +335,7 @@ main {
     display:flex;
     flex-direction: column;
 
-    height: 100vh;
+    height: inherit;
     /* flex-flow: nowrap; */
     /* justify-content: center; */
     gap: 10px;
@@ -510,21 +507,20 @@ main {
 
 
 /* Footer */
-/* Display footer sections only on contact pages */
-#contacts:target footer {
-    display: flex; /* Show footer */
-}
-
 footer {
-    display: none; /* Footer is hidden by default */
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+}
 
-    background-color:rgba(39, 34, 34, 1);
+/* Остальные стили для футера */
+footer {
+    font-size: 80%;
+    background-color: rgba(39, 34, 34, 1);
     padding: 0.5rem;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -533,9 +529,9 @@ footer a {
     margin-top: 30px;
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.2rem;
     margin-right: 0.5rem;
 }
+
 /* Media query: large or landscape phone (576px and up) */
 @media screen and (min-width: 576px) {
 
@@ -651,6 +647,11 @@ footer a {
         font-size: 2em;
         padding: 10px;
         margin: 10px;
+    }
+
+    /* Footer styles */
+    footer {
+        font-size: 100%;
     }
 
     /* to delete */

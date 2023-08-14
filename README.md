@@ -1,8 +1,12 @@
 # Project: English Teacher Website
 
+[View the live project here.](https://vladar21.github.io/english-teacher/)
+
 ## Description
 
 The "English Teacher" project aims to create a captivating business card website for a self-employed English teacher. The website's main objective is to offer crucial details about the teacher's services, underscore the significance of learning English, and provide a means for potential students to engage with the teacher.
+
+![Improve your English](Improve_your_English_responsive.png)
 
 ## User Goals
 

@@ -78,7 +78,6 @@ header a {
 /* Hover effect example */
 .logo:hover {
     background-color: rgba(123, 81, 141, 0.3);
-    /* Change color on hover */
 }
 
 /* Navbar styles with dropdown toggle */
@@ -314,6 +313,11 @@ main {
     padding-left: 10px;
     padding-right: 10px;
     background-color: rgba(65, 65, 65, 0.7);
+}
+
+#contacts-container > div > div.contact-info > iframe {
+    width: 100%;
+    height: auto;
 }
 
 #contacts-container .contact-info-item {
@@ -590,6 +594,14 @@ footer a {
         margin: 10px;
     }
 
+    #contacts-container .contact-info {
+        max-width: 416px;
+    }
+
+    #contacts-container .contact-form {
+        max-width: 416px;
+    }
+
     /* Footer styles */
     footer {
         font-size: 100%;
@@ -602,7 +614,6 @@ footer a {
 
     /* Main content */
     main {
-        /* Push main content down to accommodate larger header */
         background-color: black;
     }
 
@@ -645,15 +656,10 @@ footer a {
 
     #contacts-container .contact-info {
         margin-top: 100px;
-        max-width: 400px;
     }
 
     #contacts-container .contact-info-content {
         line-height: 1.1;
-    }
-
-    #contacts-container .contact-form {
-        max-width: 520px;
     }
 
 }
@@ -711,7 +717,7 @@ footer a {
 
     /* Contacts sections styles */
     #contacts-container .container {
-        gap: 300px;
+        gap: 450px;
     }
 
     #contacts-container .contact-info-content {

@@ -592,11 +592,6 @@ footer a {
         font-size: 100%;
     }
 
-    /* to delete */
-    #photos {
-        column-count: 2;
-        column-gap: 0;
-    }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -658,11 +653,6 @@ footer a {
         max-width: 520px;
     }
 
-    /* Gallery */
-    #photos {
-        column-count: 3;
-    }
-
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -671,11 +661,6 @@ footer a {
     /* Header */
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
-    }
-
-    /* Gallery */
-    #photos {
-        column-count: 4;
     }
 }
 

@@ -74,20 +74,19 @@ header a {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
-  
-  /* Hover effect example */
-  .logo:hover {
-    background-color: rgba(123, 81, 141, 0.3); /* Change color on hover */
+
+/* Hover effect example */
+.logo:hover {
+    background-color: rgba(123, 81, 141, 0.3);
+    /* Change color on hover */
 }
 
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    /* background-color: rgba(123, 81, 141, 0.5); */
     background-color: rgba(123, 81, 141, 0.7);
     width: 100%;
     left: 0;
-    /* padding: 1rem 1rem 0; */
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
@@ -110,32 +109,27 @@ nav {
 main {
     /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
-    /* Add margin at the top to prevent content from being covered by the header */
-    /* margin-top: 47px; */
-    /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
-   
 }
 
 /* Hero section */
 #hero {
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:center;
-    margin:0;
-    height:100vh;
-    align-items:center;
-    align-content:center;
-    padding:0 8rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    padding: 0 8rem;
     background: black url('../images/Dark-London_small.webp') no-repeat center bottom/cover;
 }
 
- /* Hero image */
+/* Hero image */
 #cover-text {
     font-size: 70%;
     padding-top: 20px;
-
     background-color: rgba(241, 109, 107, .7);
     position: absolute;
     bottom: 30px;
@@ -159,7 +153,6 @@ main {
     font-size: 15px;
     width: 170px;
     padding: 10px;
-
     font-family: sans-serif;
     line-height: 24px;
     background: rgba(255, 255, 255, 0.8);
@@ -185,71 +178,30 @@ main {
 #reasons {
     width: 100%;
     background-color: #414141;
-    /* height: 100%; */
 }
 
-#reasons h2, 
+#reasons h2,
 #learn h2,
 #contacts h2 {
     margin-top: 10px;
     margin-bottom: 10px;
-    /* margin-left: 20px; */
     text-align: center;
     font-size: 150%;
 }
 
-/* #benefits {
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:center;
-    margin:0;
-    height:100vh;
-    align-items:center;
-    align-content:center;
-    padding:0 8rem;
-    background: black url('../images/London-bus-black-and-white-photography-with-color-08_2_small.webp') no-repeat left bottom/cover;
-}
-
-#benefits > div {
-    background-color:rgba(123, 81, 141, 0.8);
-    padding:20px;
-    border-radius:15px;
-    min-width:100px;
-    max-width:220px;
-    min-height:46px;
-    margin:30px 15px;
-    line-height: 20px;
-    margin-bottom: 30px;
-    font-weight: bold;
-    letter-spacing: 2px;
-
-  }
-
-#benefits p {
-    padding: 0 20px;
-}
-
-#benefits hr {
-    border-top: 1px solid #3a3a3a;
-    margin: 5px 0;
-} */
-
 #benefits {
-    
     background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat 29% 100%/auto;
-    /* background-position-x: left 50px; */
     height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
 #benefits div {
-    background-color:rgba(123, 81, 141, 0.7);
-    padding:10px;
-    border-radius:15px;
-    font-size: 87%; 
-    /* min-height:46px; */
-    margin:15px 5px;
+    background-color: rgba(123, 81, 141, 0.7);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 87%;
+    margin: 15px 5px;
     line-height: 25px;
     margin-bottom: 15px;
     font-weight: bold;
@@ -259,11 +211,9 @@ main {
     flex-basis: 180px;
     flex-grow: 1;
     flex-shrink: 0;
-    /* Create a grid of meetup time div's over the background image */
-    /* border: 2px solid white; */
 }
 
-#benefits > div > div {
+#benefits>div>div {
     margin: 0px;
     display: flex;
     flex-direction: row;
@@ -272,12 +222,14 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-#benefits > div > div h3 {
-    margin:0;
-    margin-left:10px;
-    width:90%;
+
+#benefits>div>div h3 {
+    margin: 0;
+    margin-left: 10px;
+    width: 90%;
 }
-#benefits > div > div i {
+
+#benefits>div>div i {
     width: 10%;
     font-size: 150%;
 }
@@ -297,14 +249,13 @@ main {
 
 #learn-container div {
     color: #fafafa;
-    background-color: rgba(0,0,0, .6);
+    background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
     /* This will not wrap on screens of less than 400px wide.
     Ezch div will expand to fill the available space on its row */
     flex-basis: 200px;
     flex-grow: 1;
-    /* Create a grid of meetup time div's over the background image */
     border: 2px solid white;
 }
 
@@ -313,19 +264,16 @@ main {
     color: #fafafa;
 }
 
-#learn-container div img {   
-    /* width: 200px;
-    height: 60px; */
+#learn-container div img {
     border: 2px solid white;
 }
 
 #learn-container div svg {
-    /* width: 200px;
-    height: 60px; */
     border: 2px solid white;
 }
 
-#oxford img, #person img {
+#oxford img,
+#person img {
     background-color: white;
 }
 
@@ -333,61 +281,46 @@ main {
     background-color: white;
 }
 
- /* Contacts section */
+/* Contacts section */
 
-#contacts { 
+#contacts {
     width: 100%;
     background-color: #414141;
     height: 100vh;
-    
 }
 
 #contacts-container {
-    
-    margin:0;
-    height:100%;
-    
-    padding:0;
+    margin: 0;
+    height: 100%;
+    padding: 0;
     background: black url('../images/StockSnap_MA6Q3URJYB.webp') no-repeat center top/cover;
-    /* position: relative; */
-    /* z-index: 3; */
-    /* padding-top: 15px;
-    padding-bottom: 15px; */
- 
 }
 
 #contacts-container .container {
-    display:flex;
+    display: flex;
     flex-direction: column;
-
     height: inherit;
-    /* flex-flow: nowrap; */
-    /* justify-content: center; */
     gap: 10px;
     align-items: center;
-
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-   
     padding-left: 5px;
     padding-right: 5px;
 }
 
 #contacts-container .contact-info {
-    /* flex-basis: 80%; */
     width: 80%;
     flex-grow: 0;
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color:  rgba(65, 65, 65, 0.7);
+    background-color: rgba(65, 65, 65, 0.7);
 }
 
 #contacts-container .contact-info-item {
     display: flex;
     margin-bottom: 10px;
-    
     font-size: 0.9em;
 }
 
@@ -402,7 +335,6 @@ main {
 #contacts-container .contact-info-icon i {
     font-size: 15px;
     line-height: 35px;
-    
 }
 
 #contacts-container .contact-info-content {
@@ -412,7 +344,6 @@ main {
 
 #contacts-container .contact-info-content h4 {
     color: #1da9c0;
-    /* font-size: 1.4em; */
     font-size: 1em;
     margin-bottom: 5px;
 }
@@ -436,16 +367,12 @@ main {
 }
 
 #contacts-container .contact-form {
-    /* flex-basis: 80%; */
-    /* max-width: 600px; */
     flex-grow: 0;
     width: 80%;
-   
     background-color: rgba(255, 255, 255, 0.7);
     padding: 10px;
     padding-bottom: 3px;
     padding-top: 0px;
-
     display: flex;
     flex-direction: column;
 }
@@ -460,12 +387,13 @@ main {
     width: 100%;
     margin-top: 10px;
 }
-#contact-form > div:nth-child(2) {
+
+#contact-form>div:nth-child(2) {
     margin-top: 4px !important;
 }
 
 #contacts-container .contact-form .input-box input,
-#contacts-container .contact-form .input-box textarea{
+#contacts-container .contact-form .input-box textarea {
     width: inherit;
     padding-top: 5px;
     padding-left: 5px;
@@ -491,19 +419,15 @@ main {
     color: #666;
 }
 
-#contacts-container .contact-form .input-box input:focus ~ span,
-#contacts-container .contact-form .input-box textarea:focus ~ span{
+#contacts-container .contact-form .input-box input:focus~span,
+#contacts-container .contact-form .input-box textarea:focus~span {
     color: #e91e63;
     font-size: 12px;
     transform: translateY(-14px);
 }
 
-#contacts-container .contact-form .input-box input[type="submit"]
-{
+#contacts-container .contact-form .input-box input[type="submit"] {
     width: 100%;
-    /* background: #00bcd4; */
-    /* background: rgba(0, 188, 212, 0.7); */
-    /* color: rgba(255, 255, 255, 0.7); */
     background: rgba(0, 188, 212, 0.7);
     color: rgba(255, 255, 255, 0.7);
     border: none;
@@ -514,8 +438,7 @@ main {
     transition: 0.5s;
 }
 
-#contacts-container .contact-form .input-box input[type="submit"]:hover
-{
+#contacts-container .contact-form .input-box input[type="submit"]:hover {
     background: rgba(255, 255, 255, 0.7);
     color: #00bcd4;
 }
@@ -528,26 +451,14 @@ main {
     text-align: center;
 }
 
-
-/* Google Map */
-
-
-/* Gallery page */
-
-
-#photos {
-    line-height: 0;
-}
-
-
 /* Footer */
+
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-
     font-size: 80%;
     background-color: rgba(39, 34, 34, 1);
     padding: 0.5rem;
@@ -562,7 +473,7 @@ footer a {
     margin-right: 0.5rem;
 }
 
-#contacts:target ~ footer {
+#contacts:target~footer {
     display: flex;
 }
 
@@ -574,27 +485,18 @@ footer a {
     header {
         padding-bottom: 1rem;
     }
-    
+
     /* Hero section styles */
-    
+
     #cover-text {
-    
         bottom: inherit;
-        width: 100%;
         height: 200px;
         padding-top: 40px;
         padding-left: 10px;
-        /* text-align: center; */
-
-        /* Final rgba value sets the opacity so it is semi-transparent */
         background-color: rgba(241, 109, 107, .7);
         font-size: 130%;
         position: absolute;
         bottom: 30px;
-        /* width: 80%;
-        min-height: 200px;
-        padding-top: 40px;
-        padding-left: 10px; */
         width: 300px;
         right: 50px;
     }
@@ -616,7 +518,7 @@ footer a {
     }
 
     /* h2 styles */
-    #reasons h2, 
+    #reasons h2,
     #learn h2,
     #contacts h2 {
         margin-left: 115px;
@@ -625,22 +527,21 @@ footer a {
 
     /* Section reasons */
     #benefits {
-        display:flex;
-        flex-flow:row wrap;
-        justify-content:center;
-        margin:0;
-        /* height:100vh; */
-        align-items:center;
-        align-content:center;
-        padding:0 8rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0;
+        align-items: center;
+        align-content: center;
+        padding: 0 8rem;
     }
 
-    #benefits > div {
-        background-color:rgba(123, 81, 141, 0.8);
-        padding:20px;
-        border-radius:15px;
-        min-height:46px;
-        margin:30px 15px;
+    #benefits>div {
+        background-color: rgba(123, 81, 141, 0.8);
+        padding: 20px;
+        border-radius: 15px;
+        min-height: 46px;
+        margin: 30px 15px;
         line-height: 20px;
         margin-bottom: 30px;
         letter-spacing: 2px;
@@ -657,7 +558,7 @@ footer a {
 
     /* Contacts sections styles */
     #contacts-container .container {
-        font-size: 130%;        
+        font-size: 130%;
     }
 
     #contacts-container .contact-info {
@@ -671,7 +572,7 @@ footer a {
 
     #contacts-container .contact-form .input-box input,
     #contacts-container .contact-form .input-box textarea {
-        padding:20px;
+        padding: 20px;
     }
 
     .contact-info h3 {
@@ -680,7 +581,7 @@ footer a {
         margin-bottom: 15px;
     }
 
-    #contacts-container .contact-form h3  {
+    #contacts-container .contact-form h3 {
         font-size: 2em;
         padding: 10px;
         margin: 10px;
@@ -701,29 +602,18 @@ footer a {
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
-    /* Header */
-
-
-    /* #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    } */
-
     /* Main content */
     main {
         /* Push main content down to accommodate larger header */
-        /* margin-top: 79px; */
         background-color: black;
     }
 
     /* h2 styles */
-    #reasons h2, 
+    #reasons h2,
     #learn h2,
     #contacts h2 {
-        /* text-align: center; */
         font-size: 280%;
-    }    
+    }
 
     /* Hero image */
     #cover-text {
@@ -741,7 +631,7 @@ footer a {
     #learn-container {
         background: black url('../images/Tower-Bridge.webp') no-repeat bottom center/cover;
     }
-    
+
     /* constacts section styles */
     #contacts-container {
         background: black url('../images/StockSnap_MA6Q3URJYB.webp') no-repeat center top/cover;
@@ -759,6 +649,7 @@ footer a {
         margin-top: 100px;
         max-width: 400px;
     }
+
     #contacts-container .contact-info-content {
         line-height: 1.1;
     }
@@ -776,7 +667,8 @@ footer a {
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-     /* Header */    
+
+    /* Header */
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
@@ -788,6 +680,7 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
+
     /* Header */
     header {
         padding-bottom: 0px;
@@ -813,35 +706,23 @@ footer a {
         display: none;
     }
 
-    /* Main styles */
-    /* main {
-        margin-top: 50px;
-    } */
-    
-
     /* Reasons section styles */
 
     #benefits {
         background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat center center/cover;
-        height:100vh;
+        height: 100vh;
     }
 
     #benefits div {
-        
         font-size: 95%;
-        
         letter-spacing: 2px;
-        /* This will not wrap on screens of less than 400px wide.
-        Ezch div will expand to fill the available space on its row */
         flex-basis: 220px;
         flex-grow: 1;
         flex-shrink: 1;
-        /* Create a grid of meetup time div's over the background image */
-        /* border: 2px solid white; */        
     }
 
-     /* Contacts sections styles */
-     #contacts-container .container {
+    /* Contacts sections styles */
+    #contacts-container .container {
         gap: 300px;
     }
 

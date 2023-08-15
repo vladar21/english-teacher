@@ -64,11 +64,19 @@ While the current focus is on HTML and CSS, potential future enhancements may en
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 
-2. I tested that this page works in different browsers: Chrome, Firefox, Mircrosoft Edge.
+2. Accessibility: I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.  
 
-3. I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
+3. I tested that this page works in different browsers: Chrome, Firefox, Mircrosoft Edge.
 
-4. I have confirmed that the form works: requires entries in every field, will only accept an email in the email field, and the submit button works.
+4. I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
+
+5. I have confirmed that the form works: requires entries in every field, will only accept an email in the email field, and the submit button works.
+
+## Bugs
+
+1. On some mobile device, when you make landscape view there are two problems:
+- In the "hero" section, cover-text div and bubble div bump into each other. I think the couse it in HTML element position (absolute and relative);
+- in the "contacts section the bottom of feedback overstretch. I think the cause it in not enough accessibly height in the parent for feedback form.
 
 ## Credits
 

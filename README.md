@@ -59,10 +59,16 @@ While the current focus is on HTML and CSS, potential future enhancements may en
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+1. The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+
+2. I tested that this page works in different browsers: Chrome, Firefox, Mircrosoft Edge.
+
+3. I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
+
+4. I have confirmed that the form works: requires entries in every field, will only accept an email in the email field, and the submit button works.
 
 ## Credits
 

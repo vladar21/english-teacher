@@ -148,7 +148,6 @@ main {
 /* Speach bubble */
 .bubble {
     position: absolute;
-    top: 230;
     left: 90px;
     font-size: 15px;
     width: 170px;
@@ -218,7 +217,6 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: left;
     justify-content: space-between;
     align-items: center;
 }

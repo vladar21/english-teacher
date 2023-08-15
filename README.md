@@ -93,6 +93,8 @@ Responsive Contact Us Page](https://codepen.io/nguyn-tn-thng/pen/jOqEdZW)
 
 -   Image to contacts section from this [Mark Asthoff](https://stocksnap.io/author/6247)
 
+-   Create logo image [FreeConvert](https://www.freeconvert.com/)
+
 ### Acknowledgements
 -   Special acknowledgments to my sister Eleonora Bikulova for her invaluable input.
 

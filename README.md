@@ -64,7 +64,9 @@ While the current focus is on HTML and CSS, potential future enhancements may en
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 
-2. Accessibility: I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.  
+2. Accessibility: I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+
+![Lighthouse Chrome devtool test results](lighthouse_tools_test_results.png)
 
 3. I tested that this page works in different browsers: Chrome, Firefox, Mircrosoft Edge.
 

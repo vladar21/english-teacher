@@ -98,7 +98,7 @@ Responsive Contact Us Page](https://codepen.io/nguyn-tn-thng/pen/jOqEdZW)
 ### Acknowledgements
 -   Special acknowledgments to my sister Eleonora Bikulova for her invaluable input.
 
--   Special achnowledgment to My colleugue David Calikes for his incredable site [Cumasc Gael](https://davidcalikes.github.io/portfolio-project-one/), that gave me a lot of design ideas
+-   Special achnowledgment to David Calikes for his incredable site [Cumasc Gael](https://davidcalikes.github.io/portfolio-project-one/), that gave me a lot of design ideas
 
 -   My Mentor for continuous helpful feedback.
 

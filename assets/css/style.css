@@ -47,17 +47,30 @@ header a {
 }
 
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
+    font-size: 100%;
+    letter-spacing: 2px;
     list-style-type: none;
+    padding-bottom: 3px;
 }
 
 #menu>li {
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 .active {
     border-bottom: 1px solid #3a3a3a;
+}
+
+.logo {
+    max-width: 200px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio */
+    fill: #333; /* Change the color of the logo */
+    /* Add more styling properties as needed */
+}
+  
+  /* Hover effect example */
+  .logo:hover {
+    fill: #ff9900; /* Change color on hover */
 }
 
 /* Navbar styles with dropdown toggle */
@@ -66,7 +79,7 @@ nav {
     background-color: rgba(123, 81, 141, 0.5);
     width: 100%;
     left: 0;
-    padding: 1rem 1rem 0;
+    /* padding: 1rem 1rem 0; */
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
@@ -171,6 +184,7 @@ main {
 #learn h2,
 #contacts h2 {
     margin-bottom: 20px;
+    margin-left: 100px;
     text-align: center;
     font-size: 150%;
 }
@@ -583,7 +597,7 @@ footer a {
     #contacts h2 {
         margin-bottom: 20px;
         text-align: center;
-        font-size: 280%;
+        font-size: 180%;
     }
 
     /* Section reasons */
@@ -665,31 +679,13 @@ footer a {
 @media screen and (min-width: 768px) {
 
     /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
 
-    #menu {
-        display: flex;
-    }
 
-    #menu>li {
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    #logo {
+    /* #logo {
         font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
-    }
+    } */
 
     /* Main content */
     main {
@@ -698,9 +694,18 @@ footer a {
         background-color: black;
     }
 
+    /* h2 styles */
+    #reasons h2, 
+    #learn h2,
+    #contacts h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 280%;
+    }    
+
     /* Hero image */
     #cover-text {
-        width: 200px;
+        width: 300px;
         right: 50px;
     }
 
@@ -749,6 +754,7 @@ footer a {
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+     /* Header */    
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
@@ -760,6 +766,33 @@ footer a {
 }
 
 @media screen and (min-width: 1200px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    /* Main styles */
+    /* main {
+        margin-top: 50px;
+    } */
+    
+
     /* Reasons section styles */
     #benefits {
         background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat center center/cover;

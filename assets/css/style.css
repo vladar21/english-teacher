@@ -54,7 +54,8 @@ header a {
 }
 
 #menu>li {
-    /* margin-bottom: 1em; */
+    margin-bottom: 1em;
+    margin-left: 2em;
 }
 
 .active {
@@ -76,7 +77,8 @@ header a {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: rgba(123, 81, 141, 0.5);
+    /* background-color: rgba(123, 81, 141, 0.5); */
+    background-color: rgba(123, 81, 141, 0.7);
     width: 100%;
     left: 0;
     /* padding: 1rem 1rem 0; */
@@ -184,9 +186,10 @@ main {
 #learn h2,
 #contacts h2 {
     margin-bottom: 20px;
-    margin-left: 100px;
+    /* margin-left: 20px; */
     text-align: center;
     font-size: 150%;
+    text-align: right;
 }
 
 /* #benefits {
@@ -549,9 +552,13 @@ footer a {
 /* Media query: large or landscape phone (576px and up) */
 @media screen and (min-width: 576px) {
 
-    /* main {
-         margin-top: 0px;
-    } */
+    /* Header styles */
+
+    header {
+        padding-bottom: 1rem;
+    }
+    
+    /* Hero section styles */
     
     #cover-text {
     
@@ -596,6 +603,7 @@ footer a {
     #learn h2,
     #contacts h2 {
         margin-bottom: 20px;
+        margin-left: 115px;
         text-align: center;
         font-size: 180%;
     }
@@ -699,7 +707,8 @@ footer a {
     #learn h2,
     #contacts h2 {
         margin-bottom: 20px;
-        text-align: center;
+        margin-left: 100px;
+        /* text-align: center; */
         font-size: 280%;
     }    
 
@@ -767,6 +776,10 @@ footer a {
 
 @media screen and (min-width: 1200px) {
     /* Header */
+    header {
+        padding-bottom: 0px;
+    }
+
     nav {
         display: block;
         position: relative;
@@ -794,6 +807,7 @@ footer a {
     
 
     /* Reasons section styles */
+
     #benefits {
         background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat center center/cover;
         height:100vh;

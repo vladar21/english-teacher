@@ -76,9 +76,18 @@ While the current focus is on HTML and CSS, potential future enhancements may en
 
 ## Bugs
 
-1. On some mobile device, when you make landscape view there are two problems:
+On some mobile device, when you make landscape view there are two problems:
 - In the "hero" section, cover-text div and bubble div bump into each other. I think the couse it in HTML element position (absolute and relative);
 - in the "contacts section the bottom of feedback overstretch. I think the cause it in not enough accessibly height in the parent for feedback form.
+
+## Deployment
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+- In the GitHub repository, navigate to the Settings tab.
+- From the source section drop-down menu, select the Main Branch.
+- Once the main branch has been selected, the page provided the link to the completed website.
+
+The live link can be found here - [English Teacher](https://vladar21.github.io/english-teacher/)
 
 ## Credits
 

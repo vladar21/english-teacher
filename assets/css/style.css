@@ -185,11 +185,11 @@ main {
 #reasons h2, 
 #learn h2,
 #contacts h2 {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     /* margin-left: 20px; */
     text-align: center;
     font-size: 150%;
-    text-align: right;
 }
 
 /* #benefits {
@@ -370,6 +370,7 @@ main {
     /* flex-basis: 80%; */
     width: 80%;
     flex-grow: 0;
+    margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     background-color:  rgba(65, 65, 65, 0.7);
@@ -602,9 +603,7 @@ footer a {
     #reasons h2, 
     #learn h2,
     #contacts h2 {
-        margin-bottom: 20px;
         margin-left: 115px;
-        text-align: center;
         font-size: 180%;
     }
 
@@ -706,8 +705,6 @@ footer a {
     #reasons h2, 
     #learn h2,
     #contacts h2 {
-        margin-bottom: 20px;
-        margin-left: 100px;
         /* text-align: center; */
         font-size: 280%;
     }    

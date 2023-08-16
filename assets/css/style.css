@@ -71,8 +71,24 @@ header a {
     margin-left: 2em;
 }
 
-.active {
-    border-bottom: 1px solid #3a3a3a;
+/* .active {
+    border-bottom: 1px solid #ffffff;
+} */
+
+#menu > li {
+    padding-top: 0.3rem;
+}
+
+#menu > li > a {
+    padding: 0.2rem;
+    transition: padding 0.3s, background-color 0.3s;
+    background-color: transparent;
+}
+
+#menu > li > a:hover {
+    padding: 0.2rem;
+    background-color: rgba(39, 34, 34, 0.3);
+    border-bottom: 1px solid #ffffff;
 }
 
 /* Hover effect example */
@@ -655,7 +671,7 @@ footer a {
     }
 
     #contacts-container .contact-info {
-        margin-top: 100px;
+        margin-top: 100px;php
     }
 
     #contacts-container .contact-info-content {

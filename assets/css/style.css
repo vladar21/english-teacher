@@ -499,6 +499,17 @@ footer a {
     display: flex;
 }
 
+/* Media query: small phone (280px and up */
+@media screen and (min-width: 505px) {
+    /* Styles for h2 titles */
+    #reasons h2,
+    #learn h2,
+    #contacts h2 {
+        text-align: left;
+        margin-left: 210px;
+    }
+}
+
 /* Media query: large or landscape phone (576px and up) */
 @media screen and (min-width: 576px) {
 
@@ -539,11 +550,11 @@ footer a {
         color: #252020;
     }
 
-    /* h2 styles */
+    /* Styles for h2 titles */
     #reasons h2,
     #learn h2,
     #contacts h2 {
-        margin-left: 115px;
+        margin-left: 225px;        
         font-size: 180%;
     }
 
@@ -637,6 +648,8 @@ footer a {
     #reasons h2,
     #learn h2,
     #contacts h2 {
+        margin-left: 70px;
+        text-align: center;
         font-size: 280%;
     }
 
@@ -671,7 +684,7 @@ footer a {
     }
 
     #contacts-container .contact-info {
-        margin-top: 100px;php
+        margin-top: 100px;
     }
 
     #contacts-container .contact-info-content {
@@ -714,6 +727,14 @@ footer a {
 
     .nav-toggle-label {
         display: none;
+    }
+
+    /* h2 styles */
+    #reasons h2,
+    #learn h2,
+    #contacts h2 {
+        margin-right: 150px;
+        font-size: 280%;
     }
 
     /* Reasons section styles */

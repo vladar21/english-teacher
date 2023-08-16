@@ -571,7 +571,6 @@ footer a {
 
     #benefits>div {
         background-color: rgba(123, 81, 141, 0.8);
-        padding: 20px;
         border-radius: 15px;
         min-height: 46px;
         margin: 30px 15px;
@@ -693,7 +692,7 @@ footer a {
 
 }
 
-/* Large devices (laptops and desktops, 992px and up) */
+/* Large devices (Notebooks, 992px and up) */
 @media screen and (min-width: 992px) {
 
     /* Header */
@@ -702,6 +701,7 @@ footer a {
     }
 }
 
+/* Large devices (laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
 
     /* Header */
@@ -734,7 +734,6 @@ footer a {
     #learn h2,
     #contacts h2 {
         margin-right: 150px;
-        font-size: 280%;
     }
 
     /* Reasons section styles */
@@ -742,14 +741,6 @@ footer a {
     #benefits {
         background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat center center/cover;
         height: 100vh;
-    }
-
-    #benefits div {
-        font-size: 95%;
-        letter-spacing: 2px;
-        flex-basis: 220px;
-        flex-grow: 1;
-        flex-shrink: 1;
     }
 
     /* Contacts sections styles */
@@ -761,4 +752,13 @@ footer a {
         line-height: 1.2;
     }
 
+}
+
+/* Desktops 1600px and up */
+@media screen and (min-width: 1600px) {
+
+    /* Reasons sections style  */
+    #benefits div {
+        font-size: 95%;
+    }
 }

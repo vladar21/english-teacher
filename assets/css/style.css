@@ -753,22 +753,12 @@ footer a {
 
     #hero {
         padding: 0 1rem;
-        /* display: flex;
-        flex-flow: row wrap; */
-        /* justify-content: center; */
-        /* margin: 0;
-        height: 100vh;
-        align-items: center; */
-        /* align-content: center; */
-        /* padding: 0 8rem; */
-        /* background: black url(../images/Dark-London_small.webp) no-repeat center bottom/cover; */
     }
 
     #cover-text {
         position: relative;
         bottom: -25%;
         left: 40%;
-        /* order: 1; */
         height: 120px;
         padding: 10px;
         font-size: 95%;
@@ -778,21 +768,8 @@ footer a {
         position: relative;
         bottom: 20%;
         right: 30%;
-        /* order: 2; */
         font-size: 95%;
         width: 180px;
         padding: 12px;
-        /* position: relative;
-        top: 45px;
-        right: 80px;
-        font-family: sans-serif;
-        font-size: 12px;
-        line-height: 14px;
-       
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 20px;
-        padding: 12px;
-        text-align: center;
-        color: #252020; */
     }
 }

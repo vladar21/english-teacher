@@ -748,7 +748,7 @@ footer a {
 }
 
 /* Media query: landscope */
-@media screen and (orientation: landscape) {
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
     /* Hero section styles */
 
     #hero {

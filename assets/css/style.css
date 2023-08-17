@@ -303,28 +303,27 @@ main {
 
 #contacts-container {
     margin: 0;
-    height: 100%;
     padding: 0;
+    padding-bottom: 30px;
+    height: 100%;    
     background: black url('../images/StockSnap_MA6Q3URJYB.webp') no-repeat center top/cover;
 }
 
 #contacts-container .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     height: inherit;
     gap: 2px;
     align-items: center;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 #contacts-container .contact-info {
     width: 80%;
     flex-grow: 0;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding-left: 10px;
     padding-right: 10px;
     background-color: rgba(65, 65, 65, 0.7);
@@ -337,7 +336,7 @@ main {
 
 #contacts-container .contact-info-item {
     display: flex;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     font-size: 0.9em;
 }
 
@@ -392,6 +391,7 @@ main {
     padding-top: 0px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 45px;
 }
 
 #contact-form .input-box label {
@@ -558,50 +558,80 @@ footer a {
     }
 
     /* Contacts sections styles */
+    /* #contacts {
+        height: 100%;
+    } */
+
     #contacts-container .container {
-        font-size: 130%;
+        font-size: 95%;
         gap: 10px;
     }
 
     #contacts-container .contact-info {
-        margin-top: 30px;
-        max-width: 70%;
+        margin-top: 5px;
+        max-width: 38%;
+        /* max-width: 350px; */
     }
 
     #contacts-container .contact-form {
-        max-width: 70%;
+        max-width: 38%;
+        margin-bottom: 5px;
+        /* max-width: 350px; */
     }
 
     #contacts-container .contact-form .input-box input,
     #contacts-container .contact-form .input-box textarea {
-        padding: 20px;
+        padding: 10px;
     }
 
     .contact-info h3 {
         padding-bottom: 10px;
         font-size: 2em;
-        margin-bottom: 15px;
     }
 
     #contacts-container .contact-form h3 {
         font-size: 2em;
         padding: 10px;
         margin: 10px;
-    }
-
-    #contacts-container .contact-info {
-        max-width: 416px;
-    }
-
-    #contacts-container .contact-form {
-        max-width: 416px;
-    }
+    }        
 
     /* Footer styles */
     footer {
         font-size: 100%;
     }
 
+}
+
+/* Media query: landscope */
+@media only screen and (max-width: 653px) and (orientation: landscape) and (max-height: 280px) {
+    /* Hero section styles */
+
+    #hero {
+        padding: 0 1rem;
+    }
+
+    #cover-text {
+        position: relative;
+        bottom: -25%;
+        left: 40%;
+        height: 120px;
+        padding: 10px;
+        font-size: 95%;
+    }
+
+    .bubble {
+        position: relative;
+        bottom: 20%;
+        right: 30%;
+        font-size: 95%;
+        width: 180px;
+        padding: 12px;
+    }
+
+    /* Contacts section */
+    #contacts {
+        height: 100%;
+    }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -660,26 +690,18 @@ footer a {
     }
 
     /* constacts section styles */
-    #contacts-container {
+    /* #contacts-container {
         background: black url('../images/StockSnap_MA6Q3URJYB.webp') no-repeat center top/cover;
-    }
+        height:unset;
+    } */
 
     /* Contacts sections styles */
     #contacts-container .container {
-        flex-direction: row;
+        /* flex-direction: row; */
         flex-wrap: nowrap;
         justify-content: center;
-        gap: 60px;
+        gap: 30px;
     }
-
-    #contacts-container .contact-info {
-        margin-top: 100px;
-    }
-
-    #contacts-container .contact-info-content {
-        line-height: 1.1;
-    }
-
 }
 
 /* Large devices (Notebooks, 992px and up) */
@@ -729,9 +751,17 @@ footer a {
 
     /* Contacts sections styles */
     #contacts-container .container {
-        gap: 450px;
+        gap: 30%;
     }
 
+    #contacts-container .contact-info {
+       max-width: 30%;
+    }
+
+    #contacts-container .contact-form {
+       max-width: 30%;
+    }
+    
     #contacts-container .contact-info-content {
         line-height: 1.2;
     }
@@ -744,32 +774,5 @@ footer a {
     /* Reasons sections style  */
     #benefits div {
         font-size: 95%;
-    }
-}
-
-/* Media query: landscope */
-@media only screen and (max-width: 1000px) and (orientation: landscape) {
-    /* Hero section styles */
-
-    #hero {
-        padding: 0 1rem;
-    }
-
-    #cover-text {
-        position: relative;
-        bottom: -25%;
-        left: 40%;
-        height: 120px;
-        padding: 10px;
-        font-size: 95%;
-    }
-
-    .bubble {
-        position: relative;
-        bottom: 20%;
-        right: 30%;
-        font-size: 95%;
-        width: 180px;
-        padding: 12px;
     }
 }

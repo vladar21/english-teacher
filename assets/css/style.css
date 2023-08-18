@@ -745,6 +745,38 @@ footer a {
 
 }
 
+/* Media query: landscope */
+@media only screen and (max-width: 1600px) and (orientation: landscape) and (max-height: 720px) {
+    /* Hero section styles */
+
+    #hero {
+        padding: 0 1rem;
+    }
+
+    #cover-text {
+        position: relative;
+        bottom: -25%;
+        left: 40%;
+        height: 120px;
+        padding: 10px;
+        font-size: 95%;
+    }
+
+    .bubble {
+        position: relative;
+        bottom: 0%;
+        right: 25%;
+        font-size: 95%;
+        width: 180px;
+        padding: 12px;
+    }
+
+    /* Contacts section */
+    #contacts {
+        height: 100%;
+    }
+}
+
 /* Desktops 1600px and up */
 @media screen and (min-width: 1600px) {
 

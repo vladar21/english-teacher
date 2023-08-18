@@ -90,8 +90,8 @@ On some mobile device, when you make landscape view there are two problems:
 - In the "hero" section, cover-text div and bubble div bump into each other. I think the couse it in HTML element position (absolute and relative);
 - in the "contacts section the bottom of feedback overstretch. I think the cause it in not enough accessibly height in the parent for feedback form.
 
-The bugs solution were make special media query for landscape screen. 
-See on image below:
+The solution was to create a special media query for landscape mode. 
+See the image below:
 ![Bugssolution](bugs_solution.png)
 
 ## Deployment

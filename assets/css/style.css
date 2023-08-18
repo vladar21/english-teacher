@@ -616,6 +616,15 @@ footer a {
         padding: 12px;
     }
 
+    /* Reasons sections */
+
+    #reasons {
+        height: 100%;
+    }
+    #benefits {
+        height: 100%;
+    }
+
     /* Contacts section */
     #contacts {
         height: 100%;
@@ -652,10 +661,14 @@ footer a {
 
     /* Section reasons */
 
+    #reasons {
+        height: 100vh;
+    }
+
     #benefits {
         background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat bottom 0% left 0%/cover;
         gap: 0px;
-        height: 100vh;
+        height: 100%;
     }
 
     #benefits>div {
@@ -773,6 +786,11 @@ footer a {
     }
 
     /* Reasons section */
+
+    #reasons {
+        height: 100%;
+    }
+
     #benefits {
         height: 100%;
     }    
@@ -787,6 +805,10 @@ footer a {
 @media screen and (min-width: 1600px) {
 
     /* Reasons sections style  */
+
+    #reasons {
+        height: 100vh;
+    }
 
     #benefits div {
         font-size: 95%;

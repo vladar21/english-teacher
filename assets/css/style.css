@@ -219,8 +219,6 @@ main {
     margin-bottom: 15px;
     font-weight: bold;
     letter-spacing: 2px;
-    /* This will not wrap on screens of less than 400px wide.
-    Ezch div will expand to fill the available space on its row */
     flex-basis: 180px;
     flex-grow: 1;
     flex-shrink: 0;
@@ -254,7 +252,6 @@ main {
 
 #learn-container {
     background: black url('../images/Tower-Bridge.webp') no-repeat center top/cover;
-    /* Handles responsivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
 }
@@ -264,8 +261,6 @@ main {
     background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
-    /* This will not wrap on screens of less than 400px wide.
-    Ezch div will expand to fill the available space on its row */
     flex-basis: 200px;
     flex-grow: 1;
     border: 2px solid white;
@@ -323,7 +318,6 @@ main {
 #contacts-container .contact-info {
     width: 80%;
     flex-grow: 0;
-    /* margin-top: 10px; */
     padding-left: 10px;
     padding-right: 10px;
     background-color: rgba(65, 65, 65, 0.7);
@@ -336,7 +330,6 @@ main {
 
 #contacts-container .contact-info-item {
     display: flex;
-    /* margin-bottom: 10px; */
     font-size: 0.9em;
 }
 
@@ -558,9 +551,6 @@ footer a {
     }
 
     /* Contacts sections styles */
-    /* #contacts {
-        height: 100%;
-    } */
 
     #contacts-container .container {
         font-size: 95%;
@@ -570,13 +560,11 @@ footer a {
     #contacts-container .contact-info {
         margin-top: 5px;
         max-width: 38%;
-        /* max-width: 350px; */
     }
 
     #contacts-container .contact-form {
         max-width: 38%;
         margin-bottom: 5px;
-        /* max-width: 350px; */
     }
 
     #contacts-container .contact-form .input-box input,
@@ -663,13 +651,9 @@ footer a {
     }
 
     /* Section reasons */
-    #reasons {
-        height: 100vh;
-    }
 
     #benefits {
         background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat bottom 0% left 0%/cover;
-        height: 100vh;
         gap: 0px;
     }
 
@@ -689,15 +673,8 @@ footer a {
         background: black url('../images/Tower-Bridge.webp') no-repeat bottom center/cover;
     }
 
-    /* constacts section styles */
-    /* #contacts-container {
-        background: black url('../images/StockSnap_MA6Q3URJYB.webp') no-repeat center top/cover;
-        height:unset;
-    } */
-
     /* Contacts sections styles */
     #contacts-container .container {
-        /* flex-direction: row; */
         flex-wrap: nowrap;
         justify-content: center;
         gap: 30px;

@@ -96,7 +96,7 @@ header a {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: rgba(123, 81, 141, 0.7);
+    background-color: rgba(123, 81, 141, 0.85);
     width: 100%;
     left: 0;
     box-shadow: 0 2px 2px #3a3a3a;

@@ -332,7 +332,7 @@ main {
 
 #contacts-container .contact-info-item {
     display: flex;
-    font-size: 0.9em;
+    font-size: 100%;
 }
 
 #contacts-container .contact-info-icon {
@@ -350,7 +350,7 @@ main {
 
 #contacts-container .contact-info-content {
     margin-left: 20px;
-    line-height: 0.85;
+    line-height: 1;
 }
 
 #contacts-container .contact-info-content h4 {

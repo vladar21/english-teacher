@@ -124,7 +124,7 @@ main {
     display: flex;
     flex-direction: column;
 }
-
+    
 /* Hero section */
 #hero {
     display: flex;
@@ -294,14 +294,15 @@ main {
 #contacts {
     width: 100%;
     background-color: #414141;
-    height: 100vh;
+    /* height: 100vh; */
+
 }
 
 #contacts-container {
     margin: 0;
     padding: 0;
-    padding-bottom: 30px;
-    height: 100%;    
+    /* padding-bottom: 30px; */
+    height: 86vh;    
     background: black url('../images/StockSnap_MA6Q3URJYB.webp') no-repeat center top/cover;
 }
 
@@ -469,15 +470,16 @@ main {
 /* Footer */
 
 footer {
-    position: fixed;
+    display: flex;
+    position: relative;
     bottom: 0;
     left: 0;
+    /* margin-top: 100px; */
     width: 100%;
     z-index: 1000;
     font-size: 80%;
     background-color: rgba(39, 34, 34, 1);
     padding: 0.5rem;
-    display: none;
     justify-content: space-between;
     align-items: center;
 }
@@ -489,7 +491,10 @@ footer a {
 }
 
 #contacts:target~footer {
-    display: flex;
+    /* display: flex; */
+    /* position: absolute; */
+    /* bottom:36px;
+    left:0; */
 }
 
 /* Media query: small phone (280px and up */
@@ -622,6 +627,10 @@ footer a {
 
     /* Contacts section */
     #contacts {
+        height: 100%;
+    }
+
+    #contacts-container {
         height: 100%;
     }
 }

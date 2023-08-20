@@ -127,9 +127,9 @@ main {
     
 /* Hero section */
 #hero {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    /* justify-content: space-between; */
     margin: 0;
     height: 100vh;
     align-items: center;
@@ -140,16 +140,18 @@ main {
 
 /* Hero image */
 #cover-text {
-    font-size: 70%;
+    /* align-self: baseline; */
+    /* order: 2; */
+    font-size: 120%;
     padding-top: 20px;
     background-color: rgba(241, 109, 107, .7);
     position: absolute;
     bottom: 30px;
-    width: 90%;
-    min-width: 235px;
-    height: 80px;
-    padding: 5px;
-    text-align: center;
+    right: 20px;
+    width: 60%;
+    /* min-height: 120px;
+    padding-top: 40px; */
+    padding-left: 10px;
 }
 
 #cover-text>h1,
@@ -160,16 +162,32 @@ main {
 /* Speach bubble */
 .bubble {
     position: absolute;
-    left: 90px;
-    font-size: 15px;
-    width: 170px;
-    padding: 10px;
-    font-family: sans-serif;
-    line-height: 24px;
+    left: 15%;
+    bottom: 50%;
+    /* font-size: 15px; */
+    /* width: 170px; */
+    /* padding: 10px; */
+    /* font-family: sans-serif; */
+    /* line-height: 24px; */
+    /* order: 1; */
+    /* width: 30%; */
     background: rgba(255, 255, 255, 0.8);
-    border-radius: 40px;
+    /* border-radius: 40px; */
     text-align: center;
     color: #252020;
+
+    /* top: inherit;
+    left: inherit; */
+    /* font-family: sans-serif; */
+    font-size: 120%;
+    line-height: 1.1;
+    /* width: 210px; */
+    /* background: rgba(255, 255, 255, 0.8); */
+    border-radius: 40px;
+    padding: 12px;
+    /* text-align: center;
+    color: #252020; */
+    width: 180px;
 }
 
 .bubble-bottom-left:before {
@@ -498,7 +516,22 @@ footer a {
     left:0; */
 }
 
-/* Media query: small phone (280px and up */
+/* Media query: small phone (350px and up */
+@media screen and (min-width: 350px) {
+    /* Speach bubble */
+    .bubble {
+        /* position: absolute; */
+        left: 28%;
+        /* bottom: 50%; */
+        /* font-size: 130%; */
+        /* line-height: 1.1; */
+        /* width: 230px; */
+        /* border-radius: 40px; */
+        /* padding: 12px; */
+    }
+}
+
+/* Media query: small phone (506px and up */
 @media screen and (min-width: 505px) {
     /* Styles for h2 titles */
     #reasons h2,
@@ -506,6 +539,18 @@ footer a {
     #contacts h2 {
         text-align: left;
         margin-left: 210px;
+    }
+
+    /* Speach bubble */
+    .bubble {
+        /* position: absolute; */
+        left: 45%;
+        /* bottom: 50%; */
+        /* font-size: 130%; */
+        /* line-height: 1.1; */
+        /* width: 230px; */
+        /* border-radius: 40px; */
+        /* padding: 12px; */
     }
 }
 
@@ -515,13 +560,12 @@ footer a {
     /* Hero section styles */
 
     #cover-text {
-        bottom: inherit;
         height: 200px;
-        padding-top: 40px;
+        /* padding-top: 40px; */
         padding-left: 10px;
-        background-color: rgba(241, 109, 107, .7);
+        /* background-color: rgba(241, 109, 107, .7); */
         font-size: 130%;
-        position: absolute;
+        /* position: absolute; */
         bottom: 30px;
         width: 300px;
         right: 50px;
@@ -529,18 +573,18 @@ footer a {
 
     /* Speach bubble */
     .bubble {
-        position: relative;
-        top: inherit;
+        /* position: relative; */
+        /* top: inherit;
         left: inherit;
         font-family: sans-serif;
         font-size: 150%;
         line-height: 1.1;
-        width: 300px;
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 40px;
+        width: 300px; */
+        /* background: rgba(255, 255, 255, 0.8); */
+        /* border-radius: 40px;
         padding: 24px;
         text-align: center;
-        color: #252020;
+        color: #252020; */
     }
 
     /* Styles for h2 titles */
@@ -610,7 +654,7 @@ footer a {
         padding: 0 1rem;
     }
 
-    #cover-text {
+    /* #cover-text {
         position: relative;
         bottom: -25%;
         left: 40%;
@@ -619,14 +663,17 @@ footer a {
         font-size: 95%;
     }
 
-    .bubble {
-        position: relative;
-        bottom: 20%;
-        right: 30%;
-        font-size: 95%;
-        width: 180px;
-        padding: 12px;
-    }
+    /* Speach bubble */
+    /* .bubble {
+        position: absolute;
+        right: 15%;
+        bottom: 15%; */
+        /* font-size: 130%; */
+        /* line-height: 1.1; */
+        /* width: 230px; */
+        /* border-radius: 40px; */
+        /* padding: 12px; */
+    /* } */
 
     /* Reasons sections */
 
@@ -788,21 +835,28 @@ footer a {
     }
 
     #cover-text {
-        position: relative;
-        bottom: -25%;
-        left: 40%;
-        height: 120px;
-        padding: 10px;
-        font-size: 95%;
+        font-size: 130%;
+        /* position: relative; */
+        /* bottom: -25%; */
+        /* left: 40%; */
+        /* height: 120px; */
+        bottom: 3%;
+        /* bottom: 50px; */
+        /* padding: 10px; */
+        width: 280px;
+        height: auto;
+        right: 1%;
+        /* padding-top: 0px; */
+        /* right: 50px; */
     }
 
     .bubble {
-        position: relative;
-        bottom: 19%;
-        right: 30%;
-        font-size: 95%;
+        /* position: absolute; */
+        bottom: 50%;
+        left: 40%;
+        font-size: 110%;
         width: 180px;
-        padding: 12px;
+        /* padding: 12px; */
     }
 
     /* Reasons section */

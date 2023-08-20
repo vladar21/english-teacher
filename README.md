@@ -6,7 +6,7 @@
 
 The "English Teacher" project aims to create a captivating business card website for a self-employed English teacher. The website's main objective is to offer crucial details about the teacher's services, underscore the significance of learning English, and provide a means for potential students to engage with the teacher.
 
-![Improve your English](Improve_your_English_responsive.png)
+![Improve your English](assets/images/readme/Improve_your_English_responsive.png)
 
 ## User Goals
 
@@ -26,29 +26,29 @@ The English Teacher website will include the following key features:
    - Encouragement and motivation for users to embark on their language learning journey.
    - Emphasis on the benefits of achieving English proficiency.
 
-   ![Home page](Home.png)
+   ![Home page](assets/images/readme/Home.png)
 
 2. **Reasons:**
    - Establish a clear understanding of what potential students can expect from the course.
 
-   ![Reasons](Reasons.png)
+   ![Reasons](assets/images/readme/Reasons.png)
 
 3. **Learning Resources:**
    - Compilation of text, images, and videos showcasing the practical benefits of English fluency.
 
-   ![LearningResources](LearningResources.png)
+   ![LearningResources](assets/images/readme/LearningResources.png)
 
 4. **Contact Information:**
    - Clear display of contact details.
    - Location information accompanied by a visual map.
    - User-friendly feedback form for sharing feedback, inquiries, and questions.
 
-   ![Contacts](Contacts.png)
+   ![Contacts](assets/images/readme/Contacts.png)
 
 5. **Social Media Links:**
    - Icons to share the course information on social media.
 
-   ![Footer](Footer.png)
+   ![Footer](assets/images/readme/Footer.png)
 
 ## Technologies Used
 
@@ -76,7 +76,7 @@ While the current focus is on HTML and CSS, potential future enhancements may en
 
 2. Accessibility: I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 
-![Lighthouse Chrome devtool test results](lighthouse_tools_test_results.png)
+![Lighthouse Chrome devtool test results](assets/images/readme/lighthouse_tools_test_results.png)
 
 3. I tested that this page works in different browsers: Chrome, Firefox, Mircrosoft Edge.
 
@@ -92,8 +92,8 @@ On some mobile device, when you make landscape view there are two problems:
 
 The solution was to create two special media queries for landscape mode. 
 See the image below:
-![landscape 653x280](bugs_solution.png)
-![landscap 1600x720](bugs_solution2.png)
+![landscape 653x280](assets/images/readme/bugs_solution.png)
+![landscap 1600x720](assets/images/readme/bugs_solution2.png)
 
 
 ## Deployment

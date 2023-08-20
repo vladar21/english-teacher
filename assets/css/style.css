@@ -51,7 +51,8 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    padding-bottom: 1rem;
 }
 
 header a {
@@ -505,12 +506,6 @@ footer a {
 /* Media query: large or landscape phone (576px and up) */
 @media screen and (min-width: 576px) {
 
-    /* Header styles */
-
-    header {
-        padding-bottom: 1rem;
-    }
-
     /* Hero section styles */
 
     #cover-text {
@@ -709,9 +704,6 @@ footer a {
 @media screen and (min-width: 1200px) {
 
     /* Header */
-    header {
-        padding-bottom: 0px;
-    }
 
     nav {
         display: block;

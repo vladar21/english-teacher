@@ -800,6 +800,10 @@ footer a {
     #contacts {
         height: 100%;
     }
+
+    #contacts-container {
+        height: 100%;
+    }
 }
 
 /* Desktops 1600px and up */

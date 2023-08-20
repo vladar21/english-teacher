@@ -336,8 +336,12 @@ main {
 }
 
 #contacts-container .contact-info-icon i {
-    font-size: 15px;
+    font-size: 15px;   
     line-height: 35px;
+}
+
+.iconsize {
+    font-size:1.3em;
 }
 
 #contacts-container .contact-info-content {
@@ -358,6 +362,12 @@ main {
 
 #contacts-container .google-map-title {
     margin-bottom: 0px;
+}
+
+.google-map-iframe {
+    margin-top:3px; 
+    width: 400px;
+    height: 267px;
 }
 
 .contact-info h3 {

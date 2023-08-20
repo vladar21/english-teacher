@@ -712,14 +712,17 @@ footer a {
     }
 
     /* Hero image */
-    #cover-text {
-        width: 300px;
-        right: 50px;
-    }
-
     /* background-image for sections */
     #hero {
         background: black url('../images/Dark-London.webp') no-repeat center center/cover;
+    }
+    #cover-text {
+        width: 350px;
+        /* right: 50px; */
+    }
+    .bubble {
+        width: 220px;
+        padding: 24px;
     }
 
     /* Section reasons */
@@ -764,6 +767,7 @@ footer a {
         justify-content: center;
         gap: 30px;
     }
+
 }
 
 /* Large devices (Notebooks, 992px and up) */
@@ -773,6 +777,12 @@ footer a {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+
+    /* .bubble { */
+        /* position: absolute; */
+        /* width: 220px;
+        padding: 24px;
+    } */
 }
 
 /* Large devices (laptops and desktops, 1200px and up) */

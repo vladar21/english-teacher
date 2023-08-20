@@ -211,7 +211,7 @@ main {
 }
 
 #benefits div {
-    background-color: rgba(123, 81, 141, 0.7);
+    background-color: rgba(123, 81, 141, 0.83);
     padding: 10px;
     border-radius: 15px;
     font-size: 87%;
@@ -550,6 +550,17 @@ footer a {
         font-size: 180%;
     }
 
+    /* Reason styles */
+    #benefits {
+        gap: 5%;
+        align-items: stretch;
+    }
+
+    #benefits div {
+        flex-basis: 220px;
+        
+    }
+
     /* Contacts sections styles */
 
     #contacts-container .container {
@@ -670,6 +681,14 @@ footer a {
     }
 
     #benefits {
+        /* gap: 10%; */
+    }
+    #benefits div {
+        /* flex-basis: 300px; */
+        /* width: 230px; */
+    }
+
+    #benefits {
         background: black url('../images/London-bus-black-and-white-photography-with-color-08_2.webp') no-repeat bottom 0% left 0%/cover;
         gap: 0px;
         height: 100%;
@@ -706,7 +725,6 @@ footer a {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
-
 }
 
 /* Large devices (laptops and desktops, 1200px and up) */

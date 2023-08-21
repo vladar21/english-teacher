@@ -119,7 +119,6 @@
 
 /* Main content */
 .main-css {
-    /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
@@ -473,7 +472,7 @@
 
 /* Footer */
 
-footer {
+.footer-css {
     display: flex;
     position: relative;
     bottom: 0;
@@ -487,7 +486,7 @@ footer {
     align-items: center;
 }
 
-footer a {
+.footer-css a {
     text-decoration: none;
     color: #ffffff;
     margin-right: 0.5rem;
@@ -585,7 +584,7 @@ footer a {
     }        
 
     /* Footer styles */
-    footer {
+    .footer-css {
         font-size: 100%;
     }
 

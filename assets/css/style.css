@@ -319,7 +319,7 @@
 
 #contacts-container > div > div.contact-info > iframe {
     width: 100%;
-    height: auto;
+    height: 125px;
 }
 
 #contacts-container .contact-info-item {
@@ -514,6 +514,11 @@
     /* Speach bubble */
     .bubble {
         left: 45%;
+    }
+
+    /* Contacts styles */
+    #contacts-container > div > div.contact-info > iframe {
+        height: 100%;
     }
 }
 

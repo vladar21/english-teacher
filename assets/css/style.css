@@ -94,7 +94,7 @@
 }
 
 /* Navbar styles with dropdown toggle */
-nav {
+.nav-css {
     position: absolute;
     background-color: rgba(123, 81, 141, 0.85);
     width: 100%;
@@ -698,7 +698,7 @@ footer a {
 
     /* Header */
 
-    nav {
+    .nav-css {
         display: block;
         position: relative;
         box-shadow: none;

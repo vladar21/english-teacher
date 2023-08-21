@@ -23,19 +23,11 @@
 }
 
 /* General styles */
-body {
+
+.body-css {
     color: whitesmoke;
     font-family: 'Lato', sans-serif;
 }
-
-/* h1,
-h2,
-h3 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: white;
-} */
 
 .headers123 {
     font-family: 'Oswald', sans-serif;
@@ -49,7 +41,8 @@ h3 {
 }
 
 /* Header */
-header {
+
+.header-css {
     background-color: rgba(39, 34, 34, 0.7);
     padding: 0 1rem;
     position: fixed;
@@ -62,7 +55,7 @@ header {
     padding-bottom: 1rem;
 }
 
-header a {
+.header-css a {
     text-decoration: none;
     color: inherit;
 }

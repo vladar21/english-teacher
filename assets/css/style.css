@@ -182,7 +182,7 @@
 
 /* Reasons section */
 #reasons {
-    width: 100%;
+    /* width: 100%; */
     background-color: #414141;
 }
 
@@ -242,7 +242,7 @@
 
 /* Learnign resoursers section */
 #learn {
-    width: 100%;
+    /* width: 100%; */
     background-color: #414141;
 }
 
@@ -287,7 +287,7 @@
 /* Contacts section */
 
 #contacts {
-    width: 100%;
+    /* width: 100%; */
     background-color: #414141;
 }
 
@@ -477,7 +477,7 @@
     position: relative;
     bottom: 0;
     left: 0;
-    width: 100%;
+    /* width: 100%; */
     z-index: 1000;
     font-size: 80%;
     background-color: rgba(39, 34, 34, 1);

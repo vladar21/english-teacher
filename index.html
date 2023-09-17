@@ -299,6 +299,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
+            let name = $('#name_feedback').val();
+            let email = $('#email_feedback').val();
+            let message = $('#message_feedback').val();
             // Выбираем форму по ее id
             var form = $("#contact-form");
             // Создаем экземпляр объекта FormData и передаем ему форму
@@ -308,6 +311,10 @@
             form.on("submit", function(event) {
                 // Отменяем стандартное действие браузера при отправке формы
                 event.preventDefault();
+                formData.append('submit', 'true');
+                formData.append('name_feedback', name);
+                formData.append('email_feedback', email);
+                formData.append('message_feedback', message);
 
                 $.ajax({
                 url: "feedback.php", // Указываем адрес скрипта, который будет обрабатывать форму
@@ -330,16 +337,45 @@
                         $("#result_form").css("color", "red");
                         $("#result_form").html("Unknown response from server.");
                     }
+                    $("#result_form").css("text-align", "center");
+                    $("#result_form").css("font-weight", "bold");
+                    $("#result_form").css("background-color", "lightgrey");
+                    $("#result_form").css("padding", "3px");
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     // Эта функция будет вызвана, если сервер вернет код ошибки
                     // В параметрах будут содержаться информация об ошибке
                     // Можем вывести сообщение об ошибке в элемент с id=result_form
                     $("#result_form").css("color", "red");
+                    $("#result_form").css("text-align", "center"
+                    );
+                    $("#result_form").css("font-weight", "bold");
+                    $("#result_form").css("background-color", "lightgrey");
+                    $("#result_form").css("padding", "3px");
                     $("#result_form").html("Sorry, something went wrong. Please try again later.");
                 }
                 });
             });
+
+            // Получаем все инпуты и спаны
+            let inputs = document.querySelectorAll("#contacts-container .contact-form .input-box input, #contacts-container .contact-form .input-box textarea");
+            let spans = document.querySelectorAll("#contacts-container .contact-form .input-box span");
+
+            // Добавляем обработчик события blur (потеря фокуса) к каждому инпуту
+            inputs.forEach(function(input) {
+                input.addEventListener("blur", function() {
+                    // Находим соответствующий спан по id
+                    let span = document.querySelector("#" + input.id + "~span");
+                    // Если инпут не пустой, добавляем класс active к спану
+                    if (input.value) {
+                    span.classList.add("active");
+                    } else {
+                    // Иначе удаляем класс active
+                    span.classList.remove("active");
+                    }
+                });
+            });
+
         });
 
     </script>

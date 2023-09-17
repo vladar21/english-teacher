@@ -5,6 +5,7 @@ header("Content-Type: application/json");
 // Check if the form is submitted
 // Check if the form is submitted
 if (isset($_POST['submit'])) {
+
   // Get the user's input from the form
   $name = htmlspecialchars($_POST['name_feedback']); // Escape user input to prevent XSS
   $email = filter_var($_POST['email_feedback'], FILTER_SANITIZE_EMAIL); // Sanitize user input to prevent header injection
@@ -15,11 +16,7 @@ if (isset($_POST['submit'])) {
   if (empty($name) || empty($email) || empty($feedback)) {
     // Display an error message if any field is empty
     // Use json_encode to return a JSON object with status and message properties
-    echo json_encode(array("status" => "error", "message" => "Please fill in all the fields."));
-  } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    // Display an error message if the email is not valid
-    // Use json_encode to return a JSON object with status and message properties
-    echo json_encode(array("status" => "error", "message" => "Please enter a valid email address."));
+    echo json_encode(array("status" => "error", "message" => "Please fill in all the fields. You sent: name - ".$name.", and email - ".$email.", and message - ".$feedback));
   } else {
     // Prepare the email headers and body
     $to = "vlad.rastvorov@aol.com"; // The email address you want to receive the feedback

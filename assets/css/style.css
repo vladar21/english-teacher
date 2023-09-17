@@ -402,13 +402,6 @@
     margin-top: 10px;
 }
 
-#result-form {
-    text-align: center;
-    font-weight: bold;
-    background-color: lightgrey;
-    padding: 3px;
-}
-
 #contacts-container .contact-form .input-box:nth-child(5){
     margin-top: 0px;
 }
@@ -449,6 +442,13 @@
     color: #e91e63;
     font-size: 12px;
     transform: translateY(-14px);
+}
+
+/* Добавляем стиль для класса active в CSS */
+#contacts-container .contact-form .input-box span.active {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-14px);
 }
 
 #contacts-container .contact-form .input-box input[type="submit"] {

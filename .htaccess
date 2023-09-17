@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+# Проверка, что запрос не использует HTTPS
+RewriteCond %{HTTPS} off
+
+# Проверка, что заголовок X-Forwarded-Proto не содержит https
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+
+# Перенаправление на HTTPS
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

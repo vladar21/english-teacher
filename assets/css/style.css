@@ -444,7 +444,6 @@
     transform: translateY(-14px);
 }
 
-/* Добавляем стиль для класса active в CSS */
 #contacts-container .contact-form .input-box span.active {
   color: #e91e63;
   font-size: 12px;

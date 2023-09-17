@@ -16,10 +16,10 @@ if (isset($_POST['submit'])) {
   if (empty($name) || empty($email) || empty($feedback)) {
     // Display an error message if any field is empty
     // Use json_encode to return a JSON object with status and message properties
-    echo json_encode(array("status" => "error", "message" => "Please fill in all the fields. You sent: name - ".$name.", and email - ".$email.", and message - ".$feedback));
+    echo json_encode(array("status" => "error", "message" => "Please fill in all the fields."));
   } else {
     // Prepare the email headers and body
-    $to = "vlad.rastvorov@aol.com"; // The email address you want to receive the feedback
+    $to = "tbikulov@gmail.com"; // The email address you want to receive the feedback
     $subject = "Feedback from $name"; // The email subject
     $message = "Name: $name\nEmail: $email\nFeedback: $feedback"; // The email body
     $headers = "From: office@improve-english.com.ua"; // The email sender (use your own domain to prevent email spoofing)
@@ -30,6 +30,8 @@ if (isset($_POST['submit'])) {
       // Display a success message if the email is sent
       // Use json_encode to return a JSON object with status and message properties
       echo json_encode(array("status" => "success", "message" => "Thank you for your feedback. We appreciate it."));
+      $to2 = "office@improve-english.com.ua";
+      mail($to2, $subject, $message, $headers);
     } else {
       // Display an error message if the email is not sent
       // Use json_encode to return a JSON object with status and message properties

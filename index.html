@@ -299,9 +299,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
-            let name = $('#name_feedback').val();
-            let email = $('#email_feedback').val();
-            let message = $('#message_feedback').val();
             // Выбираем форму по ее id
             var form = $("#contact-form");
             // Создаем экземпляр объекта FormData и передаем ему форму
@@ -309,6 +306,9 @@
 
             // Добавляем обработчик события submit к форме
             form.on("submit", function(event) {
+                let name = $('#name_feedback').val();
+                let email = $('#email_feedback').val();
+                let message = $('#message_feedback').val();
                 // Отменяем стандартное действие браузера при отправке формы
                 event.preventDefault();
                 formData.append('submit', 'true');
@@ -368,10 +368,10 @@
                     let span = document.querySelector("#" + input.id + "~span");
                     // Если инпут не пустой, добавляем класс active к спану
                     if (input.value) {
-                    span.classList.add("active");
+                        span.classList.add("active");
                     } else {
                     // Иначе удаляем класс active
-                    span.classList.remove("active");
+                        span.classList.remove("active");
                     }
                 });
             });

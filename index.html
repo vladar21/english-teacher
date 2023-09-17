@@ -225,8 +225,8 @@
                             </div>
 
                             <div class="contact-info-content">
-                                <h4>Skype</h4>
-                                <p>number_skype</p>
+                                <h4>Google Meet</h4>
+                                <p>available</p>
                             </div>
                         </div>
 
@@ -246,7 +246,8 @@
                     </div>
 
                     <div class="contact-form">
-                        <form action="feedback" method="POST" id="contact-form">
+                        <div id="result_form"></div>
+                        <form action="feedback.php" method="POST" id="contact-form">
                             <h3 class="headers123">Send Message</h3>
 
                             <div class="input-box">
@@ -268,7 +269,7 @@
                             </div>
 
                             <div class="input-box">
-                                <input type="submit" value="Send">
+                                <input type="submit" name="submit" value="Send">
                             </div>
                         </form>
                     </div>
@@ -295,6 +296,53 @@
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/8617a92655.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Выбираем форму по ее id
+            var form = $("#contact-form");
+            // Создаем экземпляр объекта FormData и передаем ему форму
+            var formData = new FormData(form[0]);
+
+            // Добавляем обработчик события submit к форме
+            form.on("submit", function(event) {
+                // Отменяем стандартное действие браузера при отправке формы
+                event.preventDefault();
+
+                $.ajax({
+                url: "feedback.php", // Указываем адрес скрипта, который будет обрабатывать форму
+                type: "POST", // Указываем метод отправки данных
+                data: formData, // Передаем данные формы
+                dataType: "json", // Указываем тип данных, которые ожидаем получить от сервера
+                contentType: false,
+                processData: false,
+                success: function(response) {
+                    // Эта функция будет вызвана, если сервер вернет код 200 (успешно)
+                    // В параметре response будет содержаться JSON объект с ответом сервера
+                    // Можем проверить свойство status и вывести соответствующее сообщение в элемент с id=result_form
+                    if (response.status == "success") {
+                        $("#result_form").css("color", "green");
+                        $("#result_form").html(response.message);
+                    } else if (response.status == "error") {
+                        $("#result_form").css("color", "red");
+                        $("#result_form").html(response.message);
+                    } else {
+                        $("#result_form").css("color", "red");
+                        $("#result_form").html("Unknown response from server.");
+                    }
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    // Эта функция будет вызвана, если сервер вернет код ошибки
+                    // В параметрах будут содержаться информация об ошибке
+                    // Можем вывести сообщение об ошибке в элемент с id=result_form
+                    $("#result_form").css("color", "red");
+                    $("#result_form").html("Sorry, something went wrong. Please try again later.");
+                }
+                });
+            });
+        });
+
+    </script>
 </body>
 
 </html>

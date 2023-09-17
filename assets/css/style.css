@@ -402,6 +402,13 @@
     margin-top: 10px;
 }
 
+#result-form {
+    text-align: center;
+    font-weight: bold;
+    background-color: lightgrey;
+    padding: 3px;
+}
+
 #contacts-container .contact-form .input-box:nth-child(5){
     margin-top: 0px;
 }

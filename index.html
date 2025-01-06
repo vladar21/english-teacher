@@ -18,6 +18,28 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style> 
+        .button-container { 
+            text-align: center; 
+            padding-bottom: 10px;
+        }
+
+        .button-container a { 
+            display: inline-block; 
+            padding: 10px 20px; 
+            background-color: #1da9c0; 
+            color: #ffffff; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            text-decoration: none; 
+        } 
+        
+        .button-container a:hover { 
+            background-color: #3700b3; 
+        } 
+    </style>
 </head>
 
 <body class="body-css">
@@ -245,33 +267,7 @@
                         </iframe>
                     </div>
 
-                    <div class="contact-form">
-                        <form action="https://formdump.codeinstitute.net" method="POST" id="contact-form">
-                            <h3 class="headers123">Send Message</h3>
-
-                            <div class="input-box">
-                                <label for="name_feedback">Name</label>
-                                <input type="text" required name="name_feedback" id="name_feedback">
-                                <span>Name</span>
-                            </div>
-
-                            <div class="input-box">
-                                <label for="email_feedback">Email</label>
-                                <input type="email" required name="email_feedback" id="email_feedback">
-                                <span>Email</span>
-                            </div>
-
-                            <div class="input-box">
-                                <label for="message_feedback">Message</label>
-                                <textarea required name="message_feedback" id="message_feedback"></textarea>
-                                <span>Type your Message...</span>
-                            </div>
-
-                            <div class="input-box">
-                                <input type="submit" value="Send">
-                            </div>
-                        </form>
-                    </div>
+                    <div class="contact-form"> <h3 class="headers123">For feedback, please visit our Google Maps page</h3> <div class="button-container"> <a href="https://maps.app.goo.gl/dFoAUxBztRXU4Utr9" target="_blank">Send</a> </div> </div>
                 </div>
             </div>
         </section>
